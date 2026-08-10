@@ -5,9 +5,10 @@
     --card: #1e293b;
     --card-light: #243449;
     --text: #f8fafc;
-    --muted: #cbd5e1;
-    --accent: #06b6d4;
-    --accent-light: #67e8f9;
+    --muted: #94a3b8;
+    --accent: #00aac7;
+    --accent-dark: #008ba3;
+    --accent-light: #33bdd2;
     --border: rgba(255, 255, 255, 0.12);
 }
 
@@ -23,7 +24,7 @@ html {
 
 body {
     font-family: Inter, Arial, sans-serif;
-    background: radial-gradient(circle at top left, rgba(6, 182, 212, 0.18), transparent 35%),
+    background: radial-gradient(circle at top left, rgba(0, 170, 199, 0.18), transparent 35%),
     var(--bg);
     color: var(--text);
     line-height: 1.7;
@@ -146,7 +147,7 @@ h3 {
 
 .btn.primary {
     background: var(--accent);
-    color: #082f49;
+    color: #ffffff;
     border-color: transparent;
 }
 
@@ -232,6 +233,21 @@ h3 {
     margin-top: 1rem;
 }
 
+.project-actions {
+    margin-top: 1.25rem;
+}
+
+.btn.disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+    pointer-events: none;
+}
+
+.project-launch-note {
+    margin-top: 0.65rem;
+    font-size: 0.9rem;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -240,9 +256,9 @@ h3 {
 }
 
 .tags span {
-    background: rgba(6, 182, 212, 0.12);
+    background: rgba(0, 170, 199, 0.12);
     color: var(--accent-light);
-    border: 1px solid rgba(103, 232, 249, 0.2);
+    border: 1px solid rgba(51, 189, 210, 0.25);
     padding: 0.45rem 0.7rem;
     border-radius: 999px;
     font-size: 0.9rem;
@@ -324,6 +340,12 @@ footer {
     border: 1px solid rgba(148, 163, 184, 0.35);
 }
 
+.project-status {
+    background: rgba(0, 170, 199, 0.15);
+    color: var(--accent-light);
+    border: 1px solid rgba(51, 189, 210, 0.35);
+}
+
 .project-meta {
     display: flex;
     gap: 0.75rem;
@@ -386,9 +408,9 @@ footer {
 
 .language-btn.active {
     background: var(--accent);
-    color: #082f49;
+    color: #ffffff;
     border-color: var(--accent);
-    box-shadow: 0 0 14px rgba(6, 182, 212, 0.45);
+    box-shadow: 0 0 14px rgba(0, 170, 199, 0.45);
 }
 
 @media (max-width: 850px) {

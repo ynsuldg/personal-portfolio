@@ -74,9 +74,18 @@ const translations = {
         "School Projects": "Skolprojekt",
         "Private Projects": "Privata projekt",
         "Private": "Privat",
-
-        "My first private project will be presented here soon.":
-            "Mitt första privata projekt presenteras här inom kort.",
+        "Coming soon": "Kommer snart",
+        "Football Club Platform": "Football Club Platform",
+        "A football club platform is currently being planned and developed. More information about its features, architecture and technology stack will be added as the project progresses.":
+            "En fotbollsklubbsplattform planeras och utvecklas för närvarande. Mer information om funktioner, arkitektur och teknikstack läggs till i takt med att projektet utvecklas.",
+        "Smart Price Tracker": "Smart Price Tracker",
+        "Full-stack price-tracking application where users add a product URL, set a target price, follow price history and receive configurable email notifications when prices change or cross the target.":
+            "Fullstackapplikation för prisbevakning där användare lägger till en produktlänk, anger ett målpris, följer prishistorik och får konfigurerbara e-postnotiser när priser förändras eller passerar målpriset.",
+        "Built as an independently developed production-style project with secure account management, Google OAuth 2.0, hourly price checks, RabbitMQ-based notification processing, a responsive multilingual interface, automated tests, CI/CD and Docker deployment.":
+            "Utvecklad självständigt som ett produktionsliknande projekt med säker kontohantering, Google OAuth 2.0, priskontroller varje timme, RabbitMQ-baserad notifikationshantering, responsivt flerspråkigt gränssnitt, automatiserade tester, CI/CD och Docker-driftsättning.",
+        "Available at launch": "Tillgänglig vid lansering",
+        "The application link will be activated when the project launches.":
+            "Länken till applikationen aktiveras i samband med lanseringen.",
 
         "Microservices Webshop": "Webshop med mikrotjänster",
         "Group Project": "Grupparbete",
