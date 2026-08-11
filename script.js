@@ -49,7 +49,7 @@ const translations = {
         "Enterprise Java Development": "Komplex Java-programmering",
         "Web Services and Integrations": "Web services och integrationer",
         "Web Application Development": "Utveckling av webbapplikationer",
-        "Agile Java Development": "Agil utveckling",
+        "Agile Development": "Agil utveckling",
         "LIA Internship": "LIA-praktik",
         "Degree Project": "Examensarbete",
 

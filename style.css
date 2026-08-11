@@ -401,9 +401,10 @@ footer {
 }
 
 .course-list li::before {
-    content: "•";
+    content: "○";
     position: absolute;
     left: 0;
+    color: #8fa6bf;
 }
 
 .course-list li.completed::before {
