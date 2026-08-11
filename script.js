@@ -46,8 +46,12 @@ const translations = {
         "Java Programming": "Java-programmering",
         "Database Development": "Utveckling mot databaser",
         "Java Tools and Build Environments": "Javaverktyg och byggmiljöer",
-        "Enterprise Java Development": "Komplex Javautveckling",
+        "Enterprise Java Development": "Komplex Java-programmering",
         "Web Services and Integrations": "Web services och integrationer",
+        "Web Application Development": "Utveckling av webbapplikationer",
+        "Agile Java Development": "Agil utveckling",
+        "LIA Internship": "LIA-praktik",
+        "Degree Project": "Examensarbete",
 
         "Security Guard Training": "Totalvaktutbildning",
         "Expandable Baton": "Expanderbar batong",
@@ -59,6 +63,9 @@ const translations = {
 
         "Skills and Languages": "Kompetenser och språk",
         "Technical Skills": "Tekniska kompetenser",
+        "Development": "Utveckling",
+        "Development Tools": "Utvecklingsverktyg",
+        "DevOps & Deployment": "DevOps & Driftsättning",
         "Other Skills": "Övriga kompetenser",
         "Problem Solving": "Problemlösning",
         "Teamwork": "Samarbetsförmåga",

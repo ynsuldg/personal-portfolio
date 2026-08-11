@@ -390,6 +390,36 @@ footer {
     border: 1px solid rgba(249, 115, 22, 0.35);
 }
 
+.course-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.course-list li {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.course-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+}
+
+.course-list li.completed::before {
+    content: "✓";
+    color: #00AAC7;
+    font-weight: 700;
+}
+
+.skill-category {
+    color: #00AAC7;
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
 .language-btn {
     background: transparent;
     color: var(--muted);
