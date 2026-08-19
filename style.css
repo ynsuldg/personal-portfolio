@@ -233,6 +233,20 @@ h3 {
     margin-top: 1rem;
 }
 
+.project-title-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-updated {
+    color: var(--muted);
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-align: right;
+}
+
 .project-actions {
     margin-top: 1.25rem;
 }
@@ -351,6 +365,18 @@ footer {
     gap: 0.75rem;
     margin: 0.75rem 0 1.25rem;
     flex-wrap: wrap;
+}
+
+@media (max-width: 560px) {
+    .project-title-row {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+
+    .project-updated {
+        text-align: left;
+    }
 }
 
 .project-meta span {
