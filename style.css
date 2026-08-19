@@ -247,6 +247,13 @@ h3 {
     text-align: right;
 }
 
+.project-glow-title {
+    text-shadow: 0 0 12px rgba(0, 170, 199, 1),
+                 0 0 30px rgba(0, 170, 199, 0.78),
+                 0 0 48px rgba(0, 170, 199, 0.48),
+                 0 0 64px rgba(0, 170, 199, 0.24);
+}
+
 .project-actions {
     margin-top: 1.25rem;
 }
