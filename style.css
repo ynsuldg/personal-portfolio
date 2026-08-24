@@ -100,6 +100,10 @@ main {
     letter-spacing: -0.04em;
 }
 
+.logo:hover {
+    color: var(--accent-dark);
+}
+
 .nav-links {
     display: flex;
     gap: 1rem;
