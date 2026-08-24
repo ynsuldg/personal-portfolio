@@ -185,6 +185,7 @@ h1 {
 
 h1 span {
     color: var(--accent-light);
+    white-space: nowrap;
 }
 
 h2 {
