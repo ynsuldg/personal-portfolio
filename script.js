@@ -95,11 +95,25 @@ const translations = {
         "The application link will be activated when the project launches.":
             "Länken till applikationen aktiveras i samband med lanseringen.",
 
-        "Microservices Webshop": "Webshop med mikrotjänster",
         "Group Project": "Grupparbete",
         "Individual": "Individuellt",
         "Lab Assignment": "Laboration",
         "Project": "Projekt",
+
+        "Responsive Webshop":
+            "Responsiv webshop",
+
+        "Course 6: Web Application Development":
+            "Kurs 6: Utveckling av webbapplikationer, 45 yhp",
+
+        "Responsive webshop developed with semantic HTML, CSS and JavaScript. The website includes a product catalog, featured products, a shopping cart, accessible forms and media content, with layouts adapted for desktop, tablet and mobile devices.":
+            "Responsiv webshop utvecklad med semantisk HTML, CSS och JavaScript. Webbplatsen innehåller en produktkatalog, utvalda produkter, en varukorg, tillgängliga formulär och medieinnehåll samt layouter anpassade för dator, surfplatta och mobil.",
+
+        "Product data is loaded asynchronously from a JSON file using the Fetch API and rendered dynamically. The project also focuses on accessibility through descriptive alternative text, keyboard-visible focus indicators and WCAG-compliant color contrast.":
+            "Produktdata hämtas asynkront från en JSON-fil med Fetch API och renderas dynamiskt. Projektet fokuserar även på tillgänglighet genom beskrivande alternativtexter, tydliga fokusmarkeringar för tangentbordsnavigering och färgkontraster som följer WCAG.",
+
+        "Microservices Webshop":
+            "Webshop med mikrotjänster",
 
         "Course 5: Web Services and Integrations":
             "Kurs 5: Web services och integrationer, 30 yhp",
