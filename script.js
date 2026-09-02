@@ -25,9 +25,10 @@ const translations = {
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
+        "Last updated: September 2, 2026": "Senast uppdaterad: 2 september 2026",
 
-        "I am looking for an internship (LIA) where I can apply my knowledge in practical projects and real development environments.":
-            "Jag söker LIA och vill omsätta mina kunskaper i praktiska projekt och verkliga utvecklingsmiljöer.",
+        "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a Java developer.":
+            "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som Javautvecklare.",
 
         "View projects": "Se projekt",
         "Contact me": "Kontakta mig",
@@ -294,8 +295,8 @@ const translations = {
 
         "Hello,": "Hej,",
 
-        "My name is Yunus Uludag and I am studying to become a Java developer. I am currently looking for an internship (LIA) from week 46 of 2026 to week 22 of 2027, where I can develop my practical skills, learn from experienced developers and gain a better understanding of how development work is carried out in real projects and teams.":
-            "Jag heter Yunus Uludag och studerar till Javautvecklare. Jag söker nu en LIA-plats under perioden V46 2026 till V22 2027 där jag får möjlighet att utvecklas praktiskt, lära mig av erfarna utvecklare och få en bättre förståelse för hur arbetet fungerar i verkliga projekt och team.",
+        "My name is Yunus Uludag and I am studying to become a Java developer. I am currently looking for an internship (LIA) from week 46 of 2026 (November 9) to week 22 of 2027, where I can develop my practical skills, learn from experienced developers and gain a better understanding of how development work is carried out in real projects and teams.":
+            "Jag heter Yunus Uludag och studerar till Javautvecklare. Jag söker nu en LIA-plats under perioden V46 2026 (9 november) till V22 2027 där jag får möjlighet att utvecklas praktiskt, lära mig av erfarna utvecklare och få en bättre förståelse för hur arbetet fungerar i verkliga projekt och team.",
 
         "During my studies, I have worked extensively with practical programming and gained experience with Java, databases, Git and object-oriented programming. I enjoy problem-solving and am motivated by learning new technologies and continuing to develop within IT.":
             "Under utbildningen har jag arbetat mycket praktiskt med programmering och fått erfarenhet av bland annat Java, databaser, Git och objektorienterad programmering. Jag tycker om problemlösning och motiveras av att lära mig nya tekniker och utvecklas vidare inom IT.",
