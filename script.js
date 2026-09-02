@@ -27,8 +27,8 @@ const translations = {
         "Hi, my name is": "Hej, jag heter",
         "Last updated: September 2, 2026": "Senast uppdaterad: 2 september 2026",
 
-        "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a Java developer.":
-            "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som Javautvecklare.",
+        "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
+            "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
 
         "View projects": "Se projekt",
         "Contact me": "Kontakta mig",
