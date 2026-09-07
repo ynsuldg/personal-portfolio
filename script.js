@@ -25,7 +25,7 @@ const translations = {
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
-        "Last updated: September 2, 2026": "Senast uppdaterad: 2 september 2026",
+        "Last updated: September 8, 2026": "Senast uppdaterad: 8 september 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
@@ -84,8 +84,11 @@ const translations = {
         "Private": "Privat",
         "Coming soon": "Kommer snart",
         "Football Club Platform": "Football Club Platform",
-        "A football club platform is currently being planned and developed. More information about its features, architecture and technology stack will be added as the project progresses.":
-            "En fotbollsklubbsplattform planeras och utvecklas för närvarande. Mer information om funktioner, arkitektur och teknikstack läggs till i takt med att projektet utvecklas.",
+        "In development": "Under utveckling",
+        "Full-stack football tournament platform where clubs can publish tournaments and manage categories, groups, venues, fixtures, registrations, teams and match results.":
+            "Fullstackplattform för fotbollsturneringar där klubbar kan publicera turneringar och hantera kategorier, grupper, spelplatser, spelscheman, anmälningar, lag och matchresultat.",
+        "Built with role-based ADMIN and TEAM_MANAGER workflows, automatic standings, public tournament hubs, responsive line-up visualizations, multilingual support and light/dark themes. Club subscriptions are planned for a later launch phase.":
+            "Utvecklad med rollbaserade arbetsflöden för ADMIN och TEAM_MANAGER, automatiska tabeller, publika turneringssidor, responsiva laguppställningar, flerspråksstöd samt ljust och mörkt tema. Klubbprenumerationer planeras till en senare lanseringsfas.",
         "Smart Price Tracker": "Smart Price Tracker",
         "Last updated: August 19, 2026": "Senast uppdaterad: 19 augusti 2026",
         "Full-stack price-tracking application where users can monitor product URLs, set target prices, review price history and receive configurable email notifications when prices change or reach their targets.":
