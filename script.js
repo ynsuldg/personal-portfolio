@@ -40,8 +40,8 @@ const translations = {
         "I am curious, committed and eager to learn more by working on real projects and in team environments.":
             "Jag är nyfiken, engagerad och vill lära mig mer genom att arbeta i verkliga projekt och teammiljöer.",
 
-        "2025 08 25 – Ongoing (2027 06 04)":
-            "2025 08 25 – Pågående (2027 06 04)",
+        "2025 08 25 – 2027 06 04 (Ongoing)":
+            "2025 08 25 – 2027 06 04 (Pågående)",
 
         "Java Developer": "Javautvecklare",
         "Java Programming": "Java-programmering",
