@@ -104,6 +104,12 @@ const translations = {
         "Lab Assignment": "Laboration",
         "Project": "Projekt",
 
+        "Full-stack task board developed with React, TypeScript and Tailwind CSS. The application displays tasks in Todo, Doing and Done columns, supports real-time search and provides a separate form for creating new tasks.":
+            "Fullstack-task board utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar tasks i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya tasks.",
+
+        "Tasks are loaded and created through a Node.js and Express REST API, with persistent storage in Neon PostgreSQL. React Router provides separate views for the task board and form, while Vitest and React Testing Library are used for component testing.":
+            "Tasks hämtas och skapas via ett REST API byggt med Node.js och Express, med beständig lagring i Neon PostgreSQL. React Router ger separata vyer för task board och formulär, medan Vitest och React Testing Library används för komponenttestning.",
+
         "Responsive Webshop":
             "Responsiv webshop",
 
