@@ -26,6 +26,7 @@ const translations = {
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
         "Last updated: September 8, 2026": "Senast uppdaterad: 8 september 2026",
+        "Last updated: October 12, 2026": "Senast uppdaterad: 12 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
@@ -66,6 +67,7 @@ const translations = {
         "Technical Skills": "Tekniska kompetenser",
         "Development": "Utveckling",
         "Development Tools": "Utvecklingsverktyg",
+        "Testing": "Testning",
         "DevOps & Deployment": "DevOps & Driftsättning",
         "Other Skills": "Övriga kompetenser",
         "Problem Solving": "Problemlösning",
@@ -103,6 +105,18 @@ const translations = {
         "Individual": "Individuellt",
         "Lab Assignment": "Laboration",
         "Project": "Projekt",
+
+        "Agile Webshop – React Frontend":
+            "Agil webshop – React-frontend",
+        
+        "Course 7: Agile Development":
+            "Kurs 7: Agil utveckling, 20 yhp",
+
+        "React frontend developed in a team of three for our existing microservices webshop. Built with TypeScript, React Router and Tailwind CSS, the application connects to Spring Boot REST APIs and includes login, a welcome page, a product catalog and a shopping cart.":
+            "React-frontend utvecklad i en grupp om tre personer till vår befintliga webshop med mikrotjänster. Applikationen är byggd med TypeScript, React Router och Tailwind CSS, ansluter till REST API:er i Spring Boot och innehåller inloggning, välkomstsida, produktkatalog och kundvagn.",
+
+        "My contributions include the welcome page, fetching and displaying products with loading and error handling, and an admin product overview protected by role-based middleware. We work in sprints with a Trello backlog, feature branches, pull requests, code reviews and GitHub Actions, with component tests using Vitest and React Testing Library.":
+            "Mina bidrag omfattar välkomstsidan, hämtning och visning av produkter med laddnings- och felhantering samt en produktöversikt för administratörer skyddad med rollbaserad middleware. Vi arbetar i sprintar med backlog i Trello, feature-brancher, pull requests, kodgranskning och GitHub Actions, med komponenttester i Vitest och React Testing Library.",
 
         "Full-stack task board developed with React, TypeScript and Tailwind CSS. The application displays tasks in Todo, Doing and Done columns, supports real-time search and provides a separate form for creating new tasks.":
             "Fullstack-task board utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar tasks i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya tasks.",
