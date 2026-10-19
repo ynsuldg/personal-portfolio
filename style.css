@@ -302,6 +302,52 @@ h3 {
     margin-top: 1rem;
 }
 
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.faq-item {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.faq-item summary {
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    padding: 1.2rem 3.25rem 1.2rem 1.25rem;
+    color: var(--text);
+    font-weight: 800;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 1.25rem;
+    color: var(--accent-light);
+    font-size: 1.4rem;
+    transform: translateY(-50%);
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    padding: 0 1.25rem 1.25rem;
+    color: var(--muted);
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -622,6 +668,7 @@ footer {
     .project-card,
     .project-columns,
     .grid,
+    .faq-grid,
     .cv-images {
         grid-template-columns: 1fr;
     }

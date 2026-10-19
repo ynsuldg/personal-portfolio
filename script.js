@@ -20,13 +20,14 @@ const translations = {
         "Skills": "Kompetens",
         "Projects": "Projekt",
         "Experience": "Erfarenhet",
+        "FAQ": "Vanliga frågor",
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
         "Last updated: September 8, 2026": "Senast uppdaterad: 8 september 2026",
-        "Last updated: October 12, 2026": "Senast uppdaterad: 12 oktober 2026",
+        "Last updated: October 19, 2026": "Senast uppdaterad: 19 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
@@ -316,10 +317,35 @@ const translations = {
         "Locking and unlocking premises and crime prevention.":
             "Låsning, upplåsning samt brottsförebyggning.",
 
+        "Frequently asked questions": "Vanliga frågor",
+
+        "When does your internship start?": "När börjar din LIA?",
+        "My internship starts on November 9, 2026, in week 46.":
+            "Min LIA börjar den 9 november 2026, vecka 46.",
+
+        "How long is the internship period?": "Hur lång är praktikperioden?",
+        "It runs continuously until week 22 of 2027, giving the company and me almost seven months of uninterrupted collaboration.":
+            "Den pågår sammanhängande till vecka 22 år 2027, vilket ger företaget och mig nästan sju månaders samarbete utan avbrott.",
+
+        "Are you only interested in Java?": "Är du endast intresserad av Java?",
+        "No. Java is my main focus, but I am open to other programming languages, technologies and areas of software development.":
+            "Nej. Java är mitt huvudsakliga fokus, men jag är öppen för andra programmeringsspråk, tekniker och områden inom systemutveckling.",
+
+        "What can you contribute during the internship?": "Vad kan du bidra med under praktiken?",
+        "I contribute practical programming experience, problem-solving, responsibility and collaboration, along with a strong motivation to learn and contribute to real projects.":
+            "Jag bidrar med praktisk erfarenhet av programmering, problemlösning, ansvarstagande och samarbete samt en stark motivation att lära mig och bidra i verkliga projekt.",
+
+        "How do you use AI in development?": "Hur använder du AI i utvecklingsarbetet?",
+        "I use AI as a development tool for learning, research, problem-solving and efficiency. I review and verify its suggestions and remain responsible for understanding the code, its quality, security and the final result.":
+            "Jag använder AI som ett utvecklingsverktyg för lärande, informationssökning, problemlösning och effektivitet. Jag granskar och verifierar förslagen och ansvarar själv för att förstå koden, dess kvalitet, säkerhet och slutresultat.",
+
         "Hello,": "Hej,",
 
         "My name is Yunus Uludag and I am studying to become a Java developer. I am currently looking for an internship (LIA) from week 46 of 2026 (November 9) to week 22 of 2027, where I can develop my practical skills, learn from experienced developers and gain a better understanding of how development work is carried out in real projects and teams.":
             "Jag heter Yunus Uludag och studerar till Javautvecklare. Jag söker nu en LIA-plats under perioden V46 2026 (9 november) till V22 2027 där jag får möjlighet att utvecklas praktiskt, lära mig av erfarna utvecklare och få en bättre förståelse för hur arbetet fungerar i verkliga projekt och team.",
+
+        "One advantage of our internship period is that it runs continuously for almost seven months rather than being divided into two separate periods. This provides the company with greater continuity and gives me time to become familiar with the team, contribute to ongoing projects and gradually take on greater responsibility throughout the internship.":
+            "En fördel med vår LIA-period är att den pågår sammanhängande i nästan sju månader i stället för att delas upp i två separata perioder. Det ger företaget bättre kontinuitet och ger mig tid att lära känna teamet, bidra i pågående projekt och successivt ta ett större ansvar under praktiken.",
 
         "During my studies, I have worked extensively with practical programming and gained experience with Java, databases, Git and object-oriented programming. I am motivated by new projects and opportunities to learn new technologies, solve problems and continue developing within IT.":
             "Under utbildningen har jag arbetat mycket praktiskt med programmering och fått erfarenhet av bland annat Java, databaser, Git och objektorienterad programmering. Jag motiveras av nya projekt och möjligheten att lära mig nya tekniker, lösa problem och utvecklas vidare inom IT.",
@@ -330,8 +356,8 @@ const translations = {
         "I am committed, curious and easy to collaborate with. I also have a good sense of humor and enjoy contributing to a positive atmosphere in the team. I take responsibility for my work and enjoy developing through new challenges. Although my focus so far has been Java, I am open and motivated to learn other programming languages and technologies.":
             "Som person är jag engagerad, nyfiken och lätt att samarbeta med. Jag har också nära till humor och bidrar gärna till en positiv stämning i teamet. Jag tar ansvar för mitt arbete och trivs med att utvecklas genom nya utmaningar. Även om mitt fokus hittills har varit Java är jag öppen och motiverad att lära mig andra programmeringsspråk och tekniker.",
 
-        "For me, an internship is an important opportunity both to grow as a developer and to contribute with my motivation and interest in programming.":
-            "För mig är LIA en viktig möjlighet att både växa som utvecklare och bidra med mitt driv och intresse för programmering.",
+        "For me, an internship is an important opportunity to grow as a developer, contribute my motivation and interest in programming, and complete my education.":
+            "För mig är LIA en viktig möjlighet att växa som utvecklare, bidra med mitt driv och intresse för programmering samt slutföra min utbildning.",
 
         "I look forward to hearing from you and having the opportunity to learn more about your organization and develop together with your team.":
             "Jag ser fram emot att höra från er och få möjligheten att lära känna verksamheten och utvecklas tillsammans med er.",
