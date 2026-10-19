@@ -354,6 +354,17 @@ h3 {
     gap: 1.2rem;
 }
 
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 1.2rem;
+}
+
+.skills-grid .card h3 {
+    color: var(--accent-light);
+    margin-bottom: 0.8rem;
+}
+
 .card ul,
 .skill-box ul {
     padding-left: 1.2rem;
@@ -668,6 +679,7 @@ footer {
     .project-card,
     .project-columns,
     .grid,
+    .skills-grid,
     .faq-grid,
     .cv-images {
         grid-template-columns: 1fr;

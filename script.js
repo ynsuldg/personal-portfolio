@@ -17,7 +17,7 @@ const translations = {
 
         "About me": "Om mig",
         "Education": "Utbildning",
-        "Skills": "Kompetens",
+        "Skills": "Kompetenser",
         "Projects": "Projekt",
         "Experience": "Erfarenhet",
         "FAQ": "Vanliga frågor",
@@ -69,6 +69,7 @@ const translations = {
         "Development": "Utveckling",
         "Development Tools": "Utvecklingsverktyg",
         "Testing": "Testning",
+        "Playwright / End-to-End Testing": "Playwright / End-to-End-testning",
         "DevOps & Deployment": "DevOps & Driftsättning",
         "Other Skills": "Övriga kompetenser",
         "Problem Solving": "Problemlösning",
