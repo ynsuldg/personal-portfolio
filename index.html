@@ -12,8 +12,8 @@
 <header class="site-header">
     <nav class="navbar">
         <a class="logo" href="#home">Yunus Uludag</a>
-        <button aria-label="Open menu" class="menu-toggle">☰</button>
-        <ul class="nav-links">
+        <button aria-controls="mobile-navigation-menu" aria-expanded="false" aria-label="Open menu" class="mobile-menu-toggle">☰</button>
+        <ul class="nav-links" id="mobile-navigation-menu">
             <li><a href="#about">About me</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -23,16 +23,21 @@
             <li><a href="#cover-letter">Cover letter</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <div aria-label="Language selection" class="language-switcher">
-            <button aria-pressed="false" class="language-btn" data-lang="sv" type="button">SV</button>
-            <button aria-pressed="true" class="language-btn active" data-lang="en" type="button">EN</button>
+        <div class="nav-utilities" id="header-utilities">
+            <div aria-label="Language selection" class="language-switcher" role="group">
+                <button aria-pressed="true" class="language-option language-option-active" data-lang="en" type="button">EN</button>
+                <button aria-pressed="false" class="language-option" data-lang="sv" type="button">SV</button>
+            </div>
         </div>
+        <button aria-controls="header-utilities" aria-expanded="false" aria-label="Open language menu" class="header-menu-toggle" title="Open language menu" type="button">
+            <span class="header-language-code">EN</span>
+        </button>
     </nav>
 </header>
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" datetime="2026-10-19">Last updated: October 19, 2026</time>
+            <time class="portfolio-updated" datetime="2026-10-20">Last updated: October 20, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">

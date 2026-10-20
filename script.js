@@ -1,13 +1,60 @@
-const menuToggle = document.querySelector(".menu-toggle");
+const menuToggle = document.querySelector(".mobile-menu-toggle");
 const navLinks = document.querySelector(".nav-links");
+const logoLink = document.querySelector(".logo");
+const headerMenuToggle = document.querySelector(".header-menu-toggle");
+const headerUtilities = document.querySelector(".nav-utilities");
+
+logoLink.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    window.scrollTo({
+        top: 0,
+        behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+            ? "auto"
+            : "smooth"
+    });
+});
 
 menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+    const isOpen = menuToggle.getAttribute("aria-expanded") !== "true";
+    navLinks.classList.toggle("open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+});
+
+function setLanguageMenuOpen(isOpen) {
+    headerUtilities.classList.toggle("is-open", isOpen);
+    headerMenuToggle.classList.toggle("is-open", isOpen);
+    headerMenuToggle.setAttribute("aria-expanded", String(isOpen));
+}
+
+headerMenuToggle.addEventListener("click", () => {
+    setLanguageMenuOpen(
+        headerMenuToggle.getAttribute("aria-expanded") !== "true"
+    );
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+        setLanguageMenuOpen(false);
+    }
+});
+
+document.addEventListener("click", (event) => {
+    if (
+        headerMenuToggle.getAttribute("aria-expanded") === "true" &&
+        !headerUtilities.contains(event.target) &&
+        !headerMenuToggle.contains(event.target)
+    ) {
+        setLanguageMenuOpen(false);
+    }
 });
 
 document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", () => {
         navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
     });
 });
 
@@ -27,7 +74,7 @@ const translations = {
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
         "Last updated: September 8, 2026": "Senast uppdaterad: 8 september 2026",
-        "Last updated: October 19, 2026": "Senast uppdaterad: 19 oktober 2026",
+        "Last updated: October 20, 2026": "Senast uppdaterad: 20 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
@@ -368,7 +415,7 @@ const translations = {
     }
 };
 
-const languageButtons = document.querySelectorAll(".language-btn");
+const languageButtons = document.querySelectorAll(".language-option");
 const textNodes = [];
 
 function normalizeText(value) {
@@ -491,7 +538,7 @@ function setLanguage(lang) {
             button.dataset.lang === lang;
 
         button.classList.toggle(
-            "active",
+            "language-option-active",
             isActive
         );
 
@@ -500,6 +547,8 @@ function setLanguage(lang) {
             String(isActive)
         );
     });
+
+    document.querySelector(".header-language-code").textContent = lang.toUpperCase();
 
     localStorage.setItem(
         "portfolio-language",
