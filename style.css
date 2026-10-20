@@ -684,17 +684,47 @@ h3 {
     font-size: 0.9rem;
 }
 
-.project-private,
 .project-status,
-.project-type.project,
-.project-type.lab,
-.project-course,
-.project-work.individual,
-.project-work.group {
+.project-course {
     border: 1px solid color-mix(in srgb, var(--primary) 64%, var(--border));
     background: color-mix(in srgb, var(--primary) 10%, var(--card));
     color: var(--primary);
     box-shadow: 0 0 14px color-mix(in srgb, var(--primary) 14%, transparent);
+}
+
+.project-private {
+    border: 1px solid color-mix(in srgb, var(--muted) 36%, var(--border));
+    background: color-mix(in srgb, var(--muted) 10%, var(--card));
+    color: var(--muted);
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.project-type.project {
+    border: 1px solid #4ade80;
+    background: rgba(74, 222, 128, 0.18);
+    color: #bbf7d0;
+    box-shadow: 0 0 14px rgba(74, 222, 128, 0.14);
+}
+
+.project-type.lab {
+    border: 1px solid #15803d;
+    background: rgba(22, 101, 52, 0.45);
+    color: #86efac;
+    box-shadow: 0 0 14px rgba(21, 128, 61, 0.14);
+}
+
+.project-work.group {
+    border: 1px solid #facc15;
+    background: rgba(250, 204, 21, 0.18);
+    color: #fef08a;
+    box-shadow: 0 0 14px rgba(250, 204, 21, 0.14);
+}
+
+.project-work.individual {
+    border: 1px solid #ca8a04;
+    background: rgba(161, 98, 7, 0.4);
+    color: #fde68a;
+    box-shadow: 0 0 14px rgba(202, 138, 4, 0.14);
 }
 
 .timeline {
