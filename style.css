@@ -7,7 +7,6 @@
     --muted: #94a3b8;
     --primary: #00aac7;
     --primary-dark: #33bdd2;
-    --primary-deep: #005f73;
     --primary-button-start: #00b8d4;
     --primary-button-end: #009bb8;
     --primary-button-hover-start: #18c5dd;
@@ -18,7 +17,6 @@
     --stock-warning: #facc15;
     --group-project: #c084fc;
     --individual-project: #f472b6;
-    --danger: #f87171;
     --border: #334155;
     --surface: #172033;
     --navbar-bg: rgba(15, 23, 42, 0.94);
@@ -31,14 +29,11 @@
     --page-gutter: 1rem;
     --page-edge-gap: 6rem;
     --radius-control: 12px;
-    --radius-small: 10px;
     --radius-medium: 14px;
     --radius-inner: 16px;
-    --radius-panel: 18px;
     --radius-card: 22px;
     --radius-card-large: 24px;
     --radius-pill: 999px;
-    --radius-round: 50%;
     --control-highlight: rgba(255, 255, 255, 0.28);
     --control-highlight-strong: rgba(255, 255, 255, 0.34);
     --control-inset-shadow: rgba(6, 43, 51, 0.22);
@@ -539,8 +534,7 @@ h3 {
     color: var(--primary-dark);
 }
 
-.card ul,
-.skill-box ul {
+.card ul {
     padding-left: 1.2rem;
     color: var(--muted);
 }
@@ -548,8 +542,7 @@ h3 {
 .card p,
 .text-card p,
 .project-card p,
-.timeline-item p,
-.cv-intro {
+.timeline-item p {
     color: var(--muted);
 }
 
@@ -590,14 +583,6 @@ h3 {
 .course-list li.ongoing::before {
     content: "◐";
     color: var(--primary);
-}
-
-.skill-category {
-    margin-top: 1.25rem;
-    margin-bottom: 0.5rem;
-    color: var(--primary);
-    font-size: 0.95rem;
-    font-weight: 600;
 }
 
 .project-columns {
@@ -790,24 +775,6 @@ h3 {
     line-height: 1.7;
 }
 
-.cv-images {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-    margin-top: 1.5rem;
-}
-
-.cv-images img {
-    width: 100%;
-    border: 1px solid var(--border);
-    border-radius: var(--radius-panel);
-    transition: transform 0.2s ease;
-}
-
-.cv-images img:hover {
-    transform: scale(1.02);
-}
-
 .contact {
     text-align: center;
 }
@@ -891,8 +858,7 @@ footer {
     .project-columns,
     .grid,
     .skills-grid,
-    .faq-grid,
-    .cv-images {
+    .faq-grid {
         grid-template-columns: 1fr;
     }
 

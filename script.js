@@ -111,29 +111,15 @@ const translations = {
         "Passenger Vehicle Technology": "Personbilsteknik",
         "MIG / MAG & TIG Welding": "MIG / MAG & TIG svets",
 
-        "Skills and Languages": "Kompetenser och språk",
-        "Technical Skills": "Tekniska kompetenser",
         "Development": "Utveckling",
         "Development Tools": "Utvecklingsverktyg",
         "Testing": "Testning",
         "Playwright / End-to-End Testing": "Playwright / End-to-End-testning",
         "DevOps & Deployment": "DevOps & Driftsättning",
-        "Other Skills": "Övriga kompetenser",
-        "Problem Solving": "Problemlösning",
-        "Teamwork": "Samarbetsförmåga",
-        "Fast Learner": "Snabblärd",
-        "Detail-oriented": "Noggrann",
-        "Responsible": "Ansvarstagande",
-
-        "Languages": "Språk",
-        "Swedish (Fluent)": "Svenska (Flytande)",
-        "English (Fluent)": "Engelska (Flytande)",
-        "Turkish (Fluent)": "Turkiska (Flytande)",
 
         "School Projects": "Skolprojekt",
         "Private Projects": "Privata projekt",
         "Private": "Privat",
-        "Coming soon": "Kommer snart",
 
         "Football Club Platform": "Football Club Platform",
 
@@ -221,7 +207,7 @@ const translations = {
         "Two-Factor Authentication with an Authenticator App":
             "Tvåfaktorsautentisering med Authenticator-app",
 
-        "Course 4: Enterprise Java Programming":
+        "Course 4: Enterprise Java Development":
             "Kurs 4: Komplex Java-programmering, 40 yhp",
 
         "A standalone project where I built a secure login flow with Spring Boot and Spring Security. Users can register, choose whether to enable two-factor authentication, and then sign in using a password and a time-based code from Microsoft Authenticator or Google Authenticator.":
@@ -419,8 +405,8 @@ const translations = {
         "I am committed, responsible and easy to collaborate with. I also have a good sense of humor and enjoy contributing to a positive atmosphere in the team. Although my focus so far has been Java, I am open to learning other programming languages and technologies.":
             "Som person är jag engagerad, ansvarstagande och lätt att samarbeta med. Jag har också nära till humor och bidrar gärna till en positiv stämning i teamet. Även om mitt fokus hittills har varit Java är jag öppen för att lära mig andra programmeringsspråk och tekniker.",
 
-        "For me, an internship is both an important step in completing my education and an opportunity to grow as a developer and contribute my drive and interest in programming.":
-            "För mig är LIA både ett viktigt steg mot att slutföra min utbildning och en möjlighet att växa som utvecklare samt bidra med mitt driv och intresse för programmering.",
+        "For me, an internship is an important step in completing my education and at the same time an opportunity to grow as a developer, expand my network and contribute my drive and interest in programming.":
+            "För mig är LIA ett viktigt steg mot att slutföra min utbildning och samtidigt en möjlighet att växa som utvecklare, utöka mitt kontaktnät och bidra med mitt driv och intresse för programmering.",
 
         "I look forward to hearing from you and having the opportunity to learn more about your organization and develop together with your team.":
             "Jag ser fram emot att höra från er och få möjligheten att lära känna verksamheten och utvecklas tillsammans med er.",
@@ -445,9 +431,13 @@ function collectTextNodes(root) {
             acceptNode(node) {
                 const parent = node.parentElement;
 
+                /*
+                 * Teknik-taggarna längst ner i projektkorten översätts inte.
+                 */
                 if (
                     !parent ||
-                    ["SCRIPT", "STYLE"].includes(parent.tagName)
+                    ["SCRIPT", "STYLE"].includes(parent.tagName) ||
+                    parent.closest(".tags")
                 ) {
                     return NodeFilter.FILTER_REJECT;
                 }
@@ -498,18 +488,6 @@ function setLanguage(lang) {
             node.parentElement?.parentElement?.id === "education"
         ) {
             replacement = "Utbildningar";
-        }
-
-        /*
-         * "Teamwork" används både som kompetens och som projekttagg.
-         * I projektens taggar ska den svenska texten vara "Teamarbete".
-         */
-        if (
-            lang === "sv" &&
-            key === "Teamwork" &&
-            node.parentElement?.parentElement?.classList.contains("tags")
-        ) {
-            replacement = "Teamarbete";
         }
 
         node.nodeValue =
