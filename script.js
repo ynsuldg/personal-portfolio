@@ -71,9 +71,10 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
+        portfolioLastUpdated: "Senast uppdaterad: 26 oktober 2026",
+
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
-        "Last updated: October 26, 2026": "Senast uppdaterad: 26 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
@@ -133,30 +134,42 @@ const translations = {
         "Private Projects": "Privata projekt",
         "Private": "Privat",
         "Coming soon": "Kommer snart",
+
         "Football Club Platform": "Football Club Platform",
+
+        footballClubPlatformLastUpdated: "Senast uppdaterad: 26 oktober 2026",
+
         "In development": "Under utveckling",
+
         "Full-stack football tournament platform where clubs organise tournaments from registration to final: categories with age-based game formats, groups by skill level, venues, referees, group and playoff fixtures, results and automatic standings.":
             "Fullstackplattform för fotbollsturneringar där klubbar arrangerar turneringar från anmälan till final: kategorier med åldersbaserade spelformer, grupper efter nivå, spelplatser, domare, grupp- och slutspelsmatcher, resultat och automatiska tabeller.",
+
         "Built with secure account-free team links for squads and match line-ups, automatic playoff progression, formation-based line-ups and substitutions, two-factor authentication, email notifications, multilingual support, light/dark themes, automated tests, CI/CD and Docker. Paid access for tournament organisers and payment for team registrations are planned for a later launch.":
             "Utvecklad med säkra laglänkar utan konto för trupper och matchuppställningar, automatisk slutspelsprogression, formationsbaserade laguppställningar och byten, tvåfaktorsautentisering, e-postnotiser, flerspråksstöd, ljust och mörkt tema, automatiserade tester, CI/CD och Docker. Betalning för att arrangera turneringar och för laganmälningar planeras till en senare lansering.",
+
         "Smart Price Tracker": "Smart Price Tracker",
-        "Last updated: August 19, 2026": "Senast uppdaterad: 19 augusti 2026",
+
+        smartPriceTrackerLastUpdated: "Senast uppdaterad: 19 augusti 2026",
+
         "Full-stack price-tracking application where users can monitor product URLs, set target prices, review price history and receive configurable email notifications when prices change or reach their targets.":
             "Fullstackapplikation för prisbevakning där användare kan bevaka produktlänkar, ange målpriser, följa prishistorik och få konfigurerbara e-postnotiser när priser förändras eller når sina mål.",
+
         "Built as an independently developed production-style service with secure account management, Google OAuth 2.0, two-factor authentication, subscription-ready Stripe integration, RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker deployment on Render. The public Premium subscription is planned for a later launch.":
             "Utvecklad självständigt som en produktionsliknande tjänst med säker kontohantering, Google OAuth 2.0, tvåfaktorsautentisering, prenumerationsförberedd Stripe-integration, RabbitMQ-baserad notifikationshantering, automatiserade tester, CI/CD och en ständigt aktiv Docker-driftsättning på Render. Den publika Premium-prenumerationen planeras för en senare lansering.",
+
         "Available at launch": "Tillgänglig vid lansering",
+
         "The application link will be activated when the project launches.":
             "Länken till applikationen aktiveras i samband med lanseringen.",
 
-        "Group Project": "Grupparbete",
-        "Individual": "Individuellt",
+        "Group Work": "Grupparbete",
+        "Individual Work": "Individuellt arbete",
         "Lab Assignment": "Laboration",
         "Project": "Projekt",
 
         "Agile Webshop – React Frontend":
             "Agil webshop – React-frontend",
-        
+
         "Course 7: Agile Development":
             "Kurs 7: Agil utveckling, 20 yhp",
 
@@ -237,7 +250,7 @@ const translations = {
         "JavaTools – CRUD System with Spring Boot":
             "JavaTools – CRUD-system med Spring Boot",
 
-        "Group Project + Individual Extension":
+        "Group Work + Individual Extension":
             "Grupparbete + individuellt vidarearbete",
 
         "Course 3: Java Tools and Build Environments":
@@ -388,23 +401,26 @@ const translations = {
 
         "Hello,": "Hej,",
 
-        "My name is Yunus Uludag and I am studying to become a Java developer. I am currently looking for an internship (LIA) from week 46 of 2026 (November 9) to week 22 of 2027, where I can develop my practical skills, learn from experienced developers and gain a better understanding of how development work is carried out in real projects and teams.":
-            "Jag heter Yunus Uludag och studerar till Javautvecklare. Jag söker nu en LIA-plats under perioden V46 2026 (9 november) till V22 2027 där jag får möjlighet att utvecklas praktiskt, lära mig av erfarna utvecklare och få en bättre förståelse för hur arbetet fungerar i verkliga projekt och team.",
+        "My name is Yunus Uludag and I am studying to become a Java developer. I am currently looking for an internship (LIA) from week 46 of 2026 (November 9) to week 22 of 2027, where I can develop my practical skills and contribute to real projects and teams.":
+            "Jag heter Yunus Uludag och studerar till Javautvecklare. Jag söker nu en LIA-plats från vecka 46 år 2026 (9 november) till vecka 22 år 2027, där jag kan utveckla mina praktiska kunskaper och bidra i verkliga projekt och team.",
 
-        "One advantage of our internship period is that it runs continuously for almost seven months rather than being divided into two separate periods. This provides the company with greater continuity and gives me time to become familiar with the team, contribute to ongoing projects and gradually take on greater responsibility throughout the internship.":
-            "En fördel med vår LIA-period är att den pågår sammanhängande i nästan sju månader i stället för att delas upp i två separata perioder. Det ger företaget bättre kontinuitet och ger mig tid att lära känna teamet, bidra i pågående projekt och successivt ta ett större ansvar under praktiken.",
+        "One advantage of our internship period is that it runs continuously for almost seven months rather than being divided into two separate periods. This gives the company continuity while allowing me to become part of the team and contribute to ongoing projects.":
+            "En fördel med vår LIA-period är att den pågår sammanhängande i nästan sju månader i stället för att delas upp i två separata perioder. Det ger företaget kontinuitet och mig tid att bli en del av teamet och bidra i pågående projekt.",
 
-        "During my studies, I have worked extensively with practical programming and gained experience with Java, databases, Git and object-oriented programming. I am motivated by new projects and opportunities to learn new technologies, solve problems and continue developing within IT.":
-            "Under utbildningen har jag arbetat mycket praktiskt med programmering och fått erfarenhet av bland annat Java, databaser, Git och objektorienterad programmering. Jag motiveras av nya projekt och möjligheten att lära mig nya tekniker, lösa problem och utvecklas vidare inom IT.",
+        "During my studies, I have worked extensively with practical programming and gained experience with Java, databases, Git and object-oriented programming. I am motivated by new projects that give me the opportunity to build on my knowledge.":
+            "Under utbildningen har jag arbetat mycket praktiskt med programmering och fått erfarenhet av bland annat Java, databaser, Git och objektorienterad programmering. Jag motiveras av nya projekt som ger mig möjlighet att bygga vidare på mina kunskaper.",
+
+        "I spend much of my free time developing my own products, which gives me the opportunity to turn ideas into practical solutions and continuously strengthen my skills. Outside development, I spend most of my remaining free time at the gym.":
+            "En stor del av min fritid ägnar jag åt att utveckla egna produkter, vilket ger mig möjlighet att omvandla idéer till praktiska lösningar och kontinuerligt stärka mina kunskaper. När jag inte utvecklar spenderar jag större delen av min övriga fritid på gymmet.",
 
         "I also have experience with AI-based development tools such as OpenAI Codex and Claude Code, which I use to support programming, problem-solving and development. This has given me a practical understanding of how AI can be used as an effective tool in the development process.":
             "Jag har även erfarenhet av AI-baserade utvecklingsverktyg som OpenAI Codex och Claude Code, som jag använder som stöd vid programmering, problemlösning och utveckling. Det har gett mig en praktisk förståelse för hur AI kan användas som ett effektivt verktyg i utvecklingsprocessen.",
 
-        "I am committed, curious and easy to collaborate with. I also have a good sense of humor and enjoy contributing to a positive atmosphere in the team. I take responsibility for my work and enjoy developing through new challenges. Although my focus so far has been Java, I am open and motivated to learn other programming languages and technologies.":
-            "Som person är jag engagerad, nyfiken och lätt att samarbeta med. Jag har också nära till humor och bidrar gärna till en positiv stämning i teamet. Jag tar ansvar för mitt arbete och trivs med att utvecklas genom nya utmaningar. Även om mitt fokus hittills har varit Java är jag öppen och motiverad att lära mig andra programmeringsspråk och tekniker.",
+        "I am committed, responsible and easy to collaborate with. I also have a good sense of humor and enjoy contributing to a positive atmosphere in the team. Although my focus so far has been Java, I am open to learning other programming languages and technologies.":
+            "Som person är jag engagerad, ansvarstagande och lätt att samarbeta med. Jag har också nära till humor och bidrar gärna till en positiv stämning i teamet. Även om mitt fokus hittills har varit Java är jag öppen för att lära mig andra programmeringsspråk och tekniker.",
 
-        "For me, an internship is an important opportunity to grow as a developer, contribute my motivation and interest in programming, and complete my education.":
-            "För mig är LIA en viktig möjlighet att växa som utvecklare, bidra med mitt driv och intresse för programmering samt slutföra min utbildning.",
+        "For me, an internship is both an important step in completing my education and an opportunity to grow as a developer and contribute my drive and interest in programming.":
+            "För mig är LIA både ett viktigt steg mot att slutföra min utbildning och en möjlighet att växa som utvecklare samt bidra med mitt driv och intresse för programmering.",
 
         "I look forward to hearing from you and having the opportunity to learn more about your organization and develop together with your team.":
             "Jag ser fram emot att höra från er och få möjligheten att lära känna verksamheten och utvecklas tillsammans med er.",
@@ -449,7 +465,8 @@ function collectTextNodes(root) {
         textNodes.push({
             node,
             original: node.nodeValue,
-            key: normalizeText(node.nodeValue)
+            key: node.parentElement?.dataset.i18nKey
+                || normalizeText(node.nodeValue)
         });
     }
 }
@@ -467,7 +484,7 @@ function setLanguage(lang) {
     textNodes.forEach(({node, original, key}) => {
         let replacement =
             lang === "en"
-                ? key
+                ? normalizeText(original)
                 : dictionary[key] || key;
 
         /*

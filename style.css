@@ -16,6 +16,8 @@
     --primary-button-border: #38d5e8;
     --success: #4ade80;
     --stock-warning: #facc15;
+    --group-project: #c084fc;
+    --individual-project: #f472b6;
     --danger: #f87171;
     --border: #334155;
     --surface: #172033;
@@ -337,10 +339,15 @@ main {
 .hero {
     display: grid;
     grid-template-columns: minmax(0, 1.35fr) minmax(300px, 0.65fr);
-    align-items: center;
+    align-items: stretch;
     gap: 4rem;
     padding-top: var(--page-edge-gap);
     padding-bottom: 5.5rem;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
 }
 
 main > .section:last-child {
@@ -402,6 +409,7 @@ h3 {
     display: flex;
     flex-wrap: wrap;
     gap: var(--action-gap);
+    margin-top: auto;
 }
 
 .btn {
@@ -700,31 +708,31 @@ h3 {
 }
 
 .project-type.project {
-    border: 1px solid #4ade80;
-    background: rgba(74, 222, 128, 0.18);
-    color: #bbf7d0;
-    box-shadow: 0 0 14px rgba(74, 222, 128, 0.14);
+    border: 1px solid color-mix(in srgb, var(--success) 64%, var(--border));
+    background: color-mix(in srgb, var(--success) 10%, var(--card));
+    color: var(--success);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--success) 14%, transparent);
 }
 
 .project-type.lab {
-    border: 1px solid #15803d;
-    background: rgba(22, 101, 52, 0.45);
-    color: #86efac;
-    box-shadow: 0 0 14px rgba(21, 128, 61, 0.14);
+    border: 1px solid color-mix(in srgb, var(--stock-warning) 64%, var(--border));
+    background: color-mix(in srgb, var(--stock-warning) 10%, var(--card));
+    color: var(--stock-warning);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--stock-warning) 14%, transparent);
 }
 
 .project-work.group {
-    border: 1px solid #facc15;
-    background: rgba(250, 204, 21, 0.18);
-    color: #fef08a;
-    box-shadow: 0 0 14px rgba(250, 204, 21, 0.14);
+    border: 1px solid color-mix(in srgb, var(--group-project) 64%, var(--border));
+    background: color-mix(in srgb, var(--group-project) 10%, var(--card));
+    color: var(--group-project);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--group-project) 14%, transparent);
 }
 
 .project-work.individual {
-    border: 1px solid #ca8a04;
-    background: rgba(161, 98, 7, 0.4);
-    color: #fde68a;
-    box-shadow: 0 0 14px rgba(202, 138, 4, 0.14);
+    border: 1px solid color-mix(in srgb, var(--individual-project) 64%, var(--border));
+    background: color-mix(in srgb, var(--individual-project) 10%, var(--card));
+    color: var(--individual-project);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--individual-project) 14%, transparent);
 }
 
 .timeline {
