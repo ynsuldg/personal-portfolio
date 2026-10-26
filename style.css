@@ -468,14 +468,14 @@ h3 {
     color: var(--primary);
 }
 
-.btn.disabled {
+.btn.disabled,
+.btn.disabled:hover {
     border-color: var(--border);
     background: var(--secondary-bg);
     color: var(--muted);
     box-shadow: none;
     cursor: not-allowed;
     opacity: 0.72;
-    pointer-events: none;
     transform: none;
 }
 

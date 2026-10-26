@@ -74,7 +74,6 @@ const translations = {
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
         "Last updated: October 26, 2026": "Senast uppdaterad: 26 oktober 2026",
-        "Last updated: October 20, 2026": "Senast uppdaterad: 20 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
             "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
