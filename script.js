@@ -73,7 +73,7 @@ const translations = {
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
-        "Last updated: September 8, 2026": "Senast uppdaterad: 8 september 2026",
+        "Last updated: October 26, 2026": "Senast uppdaterad: 26 oktober 2026",
         "Last updated: October 20, 2026": "Senast uppdaterad: 20 oktober 2026",
 
         "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
@@ -136,10 +136,10 @@ const translations = {
         "Coming soon": "Kommer snart",
         "Football Club Platform": "Football Club Platform",
         "In development": "Under utveckling",
-        "Full-stack football tournament platform where clubs can publish tournaments and manage categories, groups, venues, fixtures, registrations, teams and match results.":
-            "Fullstackplattform för fotbollsturneringar där klubbar kan publicera turneringar och hantera kategorier, grupper, spelplatser, spelscheman, anmälningar, lag och matchresultat.",
-        "Built with role-based ADMIN and TEAM_MANAGER workflows, automatic standings, public tournament hubs, responsive line-up visualizations, multilingual support and light/dark themes. Club subscriptions are planned for a later launch phase.":
-            "Utvecklad med rollbaserade arbetsflöden för ADMIN och TEAM_MANAGER, automatiska tabeller, publika turneringssidor, responsiva laguppställningar, flerspråksstöd samt ljust och mörkt tema. Klubbprenumerationer planeras till en senare lanseringsfas.",
+        "Full-stack football tournament platform where clubs organise tournaments from registration to final: categories with age-based game formats, groups by skill level, venues, referees, group and playoff fixtures, results and automatic standings.":
+            "Fullstackplattform för fotbollsturneringar där klubbar arrangerar turneringar från anmälan till final: kategorier med åldersbaserade spelformer, grupper efter nivå, spelplatser, domare, grupp- och slutspelsmatcher, resultat och automatiska tabeller.",
+        "Built with secure account-free team links for squads and match line-ups, automatic playoff progression, formation-based line-ups and substitutions, two-factor authentication, email notifications, multilingual support, light/dark themes, automated tests, CI/CD and Docker. Paid access for tournament organisers and payment for team registrations are planned for a later launch.":
+            "Utvecklad med säkra laglänkar utan konto för trupper och matchuppställningar, automatisk slutspelsprogression, formationsbaserade laguppställningar och byten, tvåfaktorsautentisering, e-postnotiser, flerspråksstöd, ljust och mörkt tema, automatiserade tester, CI/CD och Docker. Betalning för att arrangera turneringar och för laganmälningar planeras till en senare lansering.",
         "Smart Price Tracker": "Smart Price Tracker",
         "Last updated: August 19, 2026": "Senast uppdaterad: 19 augusti 2026",
         "Full-stack price-tracking application where users can monitor product URLs, set target prices, review price history and receive configurable email notifications when prices change or reach their targets.":
