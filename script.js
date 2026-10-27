@@ -71,7 +71,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 26 oktober 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 27 oktober 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -412,7 +412,10 @@ const translations = {
             "Jag ser fram emot att höra från er och få möjligheten att lära känna verksamheten och utvecklas tillsammans med er.",
 
         "Kind regards,": "Med vänliga hälsningar,",
-        "Contact Information": "Kontaktinformation"
+
+        "Contact Information": "Kontaktinformation",
+
+        "All rights reserved.": "Alla rättigheter förbehållna."
     }
 };
 

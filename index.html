@@ -37,7 +37,7 @@
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-10-26">Last updated: October 26, 2026</time>
+            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-10-27">Last updated: October 27, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">
@@ -986,22 +986,39 @@
             </p>
         </div>
     </section>
-    <section class="section contact" id="contact">
-        <p class="section-label">Contact Information</p>
-        <h2>Contact</h2>
-        <div class="contact-grid">
-            <a href="mailto:yunus.uludag@iths.se">yunus.uludag@iths.se</a>
-            <a href="https://www.github.com/ynsuldg" target="_blank">
-                www.github.com/ynsuldg
-            </a>
-            <a href="https://www.linkedin.com/in/ynsuldg" target="_blank">
-                www.linkedin.com/in/ynsuldg
-            </a>
-        </div>
-    </section>
 </main>
-<footer>
-    <p>© 2026 Yunus Uludag</p>
+<footer class="footer" id="contact">
+    <div class="footer-intro">
+        <p class="section-label">Contact Information</p>
+        <h2 id="footer-contact-heading">Contact</h2>
+    </div>
+    <div class="footer-main">
+        <p>© 2026 Yunus Uludag</p>
+        <p>All rights reserved.</p>
+    </div>
+    <nav aria-labelledby="footer-contact-heading" class="footer-links footer-links-contact">
+        <a href="mailto:yunus.uludag@iths.se">
+            <svg aria-hidden="true" class="footer-icon" viewBox="0 0 24 24">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>yunus.uludag@iths.se</span>
+        </a>
+        <a href="https://www.github.com/ynsuldg" target="_blank">
+            <svg aria-hidden="true" class="footer-icon" viewBox="0 0 24 24">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>www.github.com/ynsuldg</span>
+        </a>
+        <a href="https://www.linkedin.com/in/ynsuldg" target="_blank">
+            <svg aria-hidden="true" class="footer-icon" viewBox="0 0 24 24">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                <rect height="12" width="4" x="2" y="9"/>
+                <circle cx="4" cy="4" r="2"/>
+            </svg>
+            <span>www.linkedin.com/in/ynsuldg</span>
+        </a>
+    </nav>
 </footer>
 </body>
 </html>

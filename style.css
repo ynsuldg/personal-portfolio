@@ -775,25 +775,81 @@ h3 {
     line-height: 1.7;
 }
 
-.contact {
-    text-align: center;
-}
-
-.contact-grid {
-    display: grid;
-    gap: 0.8rem;
-    margin-top: var(--action-offset);
-    color: var(--muted);
-}
-
-footer {
+/*
+ * Samma footer som i Football Club Platform och Smart Price Tracker.
+ * Deras höjd styrs av länkkolumner med fyra rader. Med content-box läggs padding och
+ * kant till på samma sätt som hos dem, så att höjden blir exakt densamma.
+ */
+.footer {
+    box-sizing: content-box;
+    min-height: calc(4 * 0.95rem * 1.5 + 3 * 0.4rem);
     margin-top: 0;
     padding: 2rem max(var(--page-gutter), calc((100% - 1120px) / 2));
     border-top: 1px solid var(--border);
     background: var(--navbar-bg);
     color: var(--muted);
-    font-size: 0.95rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 2rem;
     text-align: center;
+    font-size: 0.95rem;
+}
+
+.footer p {
+    margin: 0.3rem 0;
+}
+
+.footer-main {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.footer-intro {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+    text-align: left;
+}
+
+.footer .footer-intro p {
+    margin: 0 0 0.45rem;
+}
+
+.footer-intro h2 {
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+.footer-links-contact {
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-links-contact a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.footer-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -866,6 +922,29 @@ footer {
         order: -1;
     }
 
+}
+
+@media (max-width: 700px) {
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .footer-intro,
+    .footer-main,
+    .footer-links {
+        grid-column: 1;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    .footer-intro {
+        text-align: center;
+    }
+
+    .footer-main {
+        order: 3;
+    }
 }
 
 @media (max-width: 560px) {
