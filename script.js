@@ -17,11 +17,18 @@ logoLink.addEventListener("click", (event) => {
 
 menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.getAttribute("aria-expanded") !== "true";
+    if (isOpen) {
+        setLanguageMenuOpen(false);
+    }
     navLinks.classList.toggle("open", isOpen);
     menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
 
 function setLanguageMenuOpen(isOpen) {
+    if (isOpen) {
+        navLinks.classList.remove("open");
+        menuToggle.setAttribute("aria-expanded", "false");
+    }
     headerUtilities.classList.toggle("is-open", isOpen);
     headerMenuToggle.classList.toggle("is-open", isOpen);
     headerMenuToggle.setAttribute("aria-expanded", String(isOpen));
