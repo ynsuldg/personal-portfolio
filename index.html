@@ -37,7 +37,7 @@
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-10-27">Last updated: October 27, 2026</time>
+            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-10-31">Last updated: October 31, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">
@@ -77,7 +77,7 @@
             <article class="card">
                 <p class="date">2025 08 25 – 2027 06 04 (Ongoing)</p>
                 <h3>Java Developer</h3>
-                <p>IT-Högskolan</p>
+                <p class="school-name">IT-Högskolan</p>
                 <ul class="course-list">
                     <li class="completed">Java Programming</li>
                     <li class="completed">Database Development</li>
@@ -93,7 +93,7 @@
             <article class="card">
                 <p class="date">2015 03 30 – 2015 05 08</p>
                 <h3>Security Guard Training</h3>
-                <p>Väktarskolan</p>
+                <p class="school-name">Väktarskolan</p>
                 <ul>
                     <li>VU 1</li>
                     <li>Expandable Baton</li>
@@ -104,10 +104,14 @@
             <article class="card">
                 <p class="date">2009 – 2012</p>
                 <h3>Automotive Technology</h3>
-                <p>STFG</p>
+                <p class="school-name">STFG (Upper Secondary School)</p>
                 <ul>
                     <li>Passenger Vehicle Technology</li>
+                </ul>
+                <p class="elective-heading">Individual Electives</p>
+                <ul>
                     <li>MIG / MAG &amp; TIG Welding</li>
+                    <li>Forklift Operator Certificate A, B and D</li>
                 </ul>
             </article>
         </div>
@@ -169,21 +173,25 @@
                         <h3>Agile Webshop – React Frontend</h3>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
-                            <span class="project-work group">Group Work</span>
+                            <span class="project-work group">Group Work + Individual Extension</span>
                             <span class="project-course">Course 6: Web Application Development</span>
                             <span class="project-course">Course 7: Agile Development</span>
-                            <span class="project-status">In development</span>
                         </div>
                         <p>
-                            React frontend developed in a team of three for our existing microservices webshop.
-                            Built with TypeScript, React Router and Tailwind CSS, the application connects to Spring
-                            Boot REST APIs and includes login, a welcome page, a product catalog and a shopping cart.
+                            Completed in a team of three, this webshop combines a React and TypeScript frontend with
+                            Spring Boot microservices through an API gateway. Features include JWT authentication,
+                            a searchable product catalog, category filters, a shopping cart and role-based product administration.
+                            The frontend and backend services were deployed on Render using Docker images.
                         </p>
                         <p>
-                            My contributions include the welcome page, fetching and displaying products with loading
-                            and error handling, and an admin product overview protected by role-based middleware.
-                            We work in sprints with a Trello backlog, feature branches, pull requests, code reviews
-                            and GitHub Actions, with component tests using Vitest and React Testing Library.
+                            My contributions included product views and creation, category filtering, gateway endpoints,
+                            MSW integration tests and backend documentation. We worked in Scrum sprints with Trello,
+                            pull requests, code reviews and Docker-based CI/CD. I also maintained an individual log for
+                            each sprint, documenting my contributions, challenges and reflections on our agile workflow.
+                        </p>
+                        <p>
+                            As an independent extension, I added
+                            a Stripe payment microservice with test Checkout, verified webhooks and order status updates.
                         </p>
                     </div>
                     <div class="tags">
@@ -194,12 +202,17 @@
                         <span>REST API</span>
                         <span>JWT</span>
                         <span>Spring Boot</span>
+                        <span>PostgreSQL</span>
+                        <span>RabbitMQ</span>
+                        <span>Docker</span>
+                        <span>Render</span>
                         <span>Vitest</span>
                         <span>React Testing Library</span>
+                        <span>MSW</span>
                         <span>Trello</span>
                         <span>GitHub Actions</span>
-                        <span>Code Review</span>
-                        <span>Agile</span>
+                        <span>Scrum</span>
+                        <span>Stripe</span>
                     </div>
                 </article>
                 <article class="project-card">
@@ -438,8 +451,10 @@
                         </p>
                         <p>
                             My main responsibility was developing the Drink module, where I implemented controller,
-                            service, repository and validation logic as well as custom exceptions. As an individual
-                            extension, I implemented a Jenkins-based build process with Maven Wrapper, Logback-based
+                            service, repository and validation logic as well as custom exceptions.
+                        </p>
+                        <p>
+                            As an individual extension, I implemented a Jenkins-based build process with Maven Wrapper, Logback-based
                             logging and integration tests with Spring Boot, MockMvc and H2 to automate the build,
                             testing and quality assurance process.
                         </p>

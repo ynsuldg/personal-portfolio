@@ -71,7 +71,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 27 oktober 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 31 oktober 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -108,7 +108,10 @@ const translations = {
         "PYT (160 hours)": "PYT (160 timmar)",
 
         "Automotive Technology": "Fordonsteknik",
+        "STFG (Upper Secondary School)": "STFG (Gymnasium)",
         "Passenger Vehicle Technology": "Personbilsteknik",
+        "Individual Electives": "Individuellt val",
+        "Forklift Operator Certificate A, B and D": "Truckförarbevis A, B och D",
         "MIG / MAG & TIG Welding": "MIG / MAG & TIG svets",
 
         "Development": "Utveckling",
@@ -159,11 +162,14 @@ const translations = {
         "Course 7: Agile Development":
             "Kurs 7: Agil utveckling, 20 yhp",
 
-        "React frontend developed in a team of three for our existing microservices webshop. Built with TypeScript, React Router and Tailwind CSS, the application connects to Spring Boot REST APIs and includes login, a welcome page, a product catalog and a shopping cart.":
-            "React-frontend utvecklad i en grupp om tre personer till vår befintliga webshop med mikrotjänster. Applikationen är byggd med TypeScript, React Router och Tailwind CSS, ansluter till REST API:er i Spring Boot och innehåller inloggning, välkomstsida, produktkatalog och kundvagn.",
+        "Completed in a team of three, this webshop combines a React and TypeScript frontend with Spring Boot microservices through an API gateway. Features include JWT authentication, a searchable product catalog, category filters, a shopping cart and role-based product administration. The frontend and backend services were deployed on Render using Docker images.":
+            "Webshop färdigställd i en grupp om tre personer, med en frontend i React och TypeScript som ansluter till mikrotjänster i Spring Boot via en API-gateway. Funktionerna omfattar JWT-autentisering, sökbar produktkatalog, kategorifilter, kundvagn och rollbaserad produktadministration. Frontend och backendtjänsterna driftsattes på Render med Docker-images.",
 
-        "My contributions include the welcome page, fetching and displaying products with loading and error handling, and an admin product overview protected by role-based middleware. We work in sprints with a Trello backlog, feature branches, pull requests, code reviews and GitHub Actions, with component tests using Vitest and React Testing Library.":
-            "Mina bidrag omfattar välkomstsidan, hämtning och visning av produkter med laddnings- och felhantering samt en produktöversikt för administratörer skyddad med rollbaserad middleware. Vi arbetar i sprintar med backlog i Trello, feature-brancher, pull requests, kodgranskning och GitHub Actions, med komponenttester i Vitest och React Testing Library.",
+        "My contributions included product views and creation, category filtering, gateway endpoints, MSW integration tests and backend documentation. We worked in Scrum sprints with Trello, pull requests, code reviews and Docker-based CI/CD. I also maintained an individual log for each sprint, documenting my contributions, challenges and reflections on our agile workflow.":
+            "Mina bidrag omfattade produktvyer och skapande av produkter, kategorifiltrering, gateway-endpoints, integrationstester med MSW och backenddokumentation. Vi arbetade i Scrum-sprintar med Trello, pull requests, kodgranskning och Docker-baserad CI/CD. Jag förde även en individuell loggbok för varje sprint där jag dokumenterade mina bidrag, utmaningar och reflektioner kring vårt agila arbetssätt.",
+
+        "As an independent extension, I added a Stripe payment microservice with test Checkout, verified webhooks and order status updates.":
+            "Som en individuell vidareutveckling lade jag till en mikrotjänst för Stripe-betalningar med Checkout i testmiljö, verifierade webhooks och uppdatering av orderstatus.",
 
         "Full-stack task board developed with React, TypeScript and Tailwind CSS. The application displays tasks in Todo, Doing and Done columns, supports real-time search and provides a separate form for creating new tasks.":
             "Fullstack-task board utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar tasks i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya tasks.",
@@ -245,8 +251,11 @@ const translations = {
         "Team-developed web application built with Spring Boot for managing the Drink, Food, Pizza and Spirit resources. The application follows the MVC architecture and provides full CRUD functionality with Thymeleaf as the presentation layer and PostgreSQL (Neon) as the database. I containerized the application with Docker and was responsible for deployment on Render.":
             "Grupputvecklad webbapplikation byggd med Spring Boot för hantering av resurserna Drink, Food, Pizza och Spirit. Applikationen följer MVC-arkitektur och erbjuder full CRUD-funktionalitet med Thymeleaf som presentationslager och PostgreSQL (Neon) som databas. Jag Dockeriserade applikationen och ansvarade för driftsättning på Render.",
 
-        "My main responsibility was developing the Drink module, where I implemented controller, service, repository and validation logic as well as custom exceptions. As an individual extension, I implemented a Jenkins-based build process with Maven Wrapper, Logback-based logging and integration tests with Spring Boot, MockMvc and H2 to automate the build, testing and quality assurance process.":
-            "Mitt huvudansvar var utvecklingen av Drink-modulen där jag implementerade controller, service-, repository- och valideringslogik samt egna exceptions. Som individuellt vidarearbete implementerade jag en Jenkins-baserad byggprocess med Maven Wrapper, Logback-baserad loggning samt integrationstester med Spring Boot, MockMvc och H2 för att automatisera bygg-, test- och kvalitetssäkringsprocessen.",
+        "My main responsibility was developing the Drink module, where I implemented controller, service, repository and validation logic as well as custom exceptions.":
+            "Mitt huvudansvar var utvecklingen av Drink-modulen där jag implementerade controller, service-, repository- och valideringslogik samt egna exceptions.",
+
+        "As an individual extension, I implemented a Jenkins-based build process with Maven Wrapper, Logback-based logging and integration tests with Spring Boot, MockMvc and H2 to automate the build, testing and quality assurance process.":
+            "Som individuellt vidarearbete implementerade jag en Jenkins-baserad byggprocess med Maven Wrapper, Logback-baserad loggning samt integrationstester med Spring Boot, MockMvc och H2 för att automatisera bygg-, test- och kvalitetssäkringsprocessen.",
 
         "ATM System – Spring Boot Application with Unit Testing and End-to-End Testing":
             "ATM System – Spring Boot-applikation med Unit Testing och End-to-End-testning",
