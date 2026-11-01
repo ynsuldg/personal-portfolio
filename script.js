@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 31 oktober 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 1 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -175,8 +175,35 @@ const translations = {
         "My contributions included product views and creation, category filtering, gateway endpoints, MSW integration tests and backend documentation. We worked in Scrum sprints with Trello, pull requests, code reviews and Docker-based CI/CD. I also maintained an individual log for each sprint, documenting my contributions, challenges and reflections on our agile workflow.":
             "Mina bidrag omfattade produktvyer och skapande av produkter, kategorifiltrering, gateway-endpoints, integrationstester med MSW och backenddokumentation. Vi arbetade i Scrum-sprintar med Trello, pull requests, kodgranskning och Docker-baserad CI/CD. Jag förde även en individuell loggbok för varje sprint där jag dokumenterade mina bidrag, utmaningar och reflektioner kring vårt agila arbetssätt.",
 
-        "As an independent extension, I added a Stripe payment microservice with test Checkout, verified webhooks and order status updates.":
-            "Som en individuell vidareutveckling lade jag till en mikrotjänst för Stripe-betalningar med Checkout i testmiljö, verifierade webhooks och uppdatering av orderstatus.",
+        "As an independent extension, I added a Stripe payment microservice with test Checkout, verified webhooks and order status updates. I also implemented account creation and deletion flows, a demo password reset flow and service status pages with links to the frontend, along with updated README files and Javadoc.":
+            "Som en individuell vidareutveckling lade jag till en mikrotjänst för Stripe-betalningar med Checkout i testmiljö, verifierade webhooks och uppdatering av orderstatus. Jag implementerade även flöden för att skapa och radera konton, ett demo-flöde för lösenordsåterställning och statusvyer med länkar till frontend samt uppdaterade README-filer och Javadoc.",
+
+        "GitHub repositories": "GitHub-repon",
+
+        "Live services": "Driftsatta tjänster",
+
+        "This is a school project created for educational and demonstration purposes. Payments are processed only in Stripe's test environment.":
+            "Detta är ett skolprojekt för utbildnings- och demonstrationssyfte. Betalningar hanteras endast i Stripes testmiljö.",
+
+        "For a test purchase, use Stripe's test card number":
+            "Använd Stripes testkortsnummer vid ett testköp",
+
+        ". The remaining fields can contain test values, for example 12/34, 123 and Name Lastname. Read more in the":
+            ". Övriga fält kan fyllas med testvärden, exempelvis 12/34, 123 och Name Lastname. Läs mer i repots",
+
+        "repository README": "README-fil",
+
+        "The README file is only available in Swedish.":
+            "README-filen är endast tillgänglig på svenska.",
+
+        "The services run on Render's free tier and may therefore take a little while to wake up. Open the services above and wait until their status pages confirm that startup is complete before testing the application.":
+            "Tjänsterna körs på Renders kostnadsfria nivå och kan därför ta en liten stund att starta. Öppna tjänsterna ovan och invänta att statussidorna bekräftar att uppstarten är klar innan applikationen testas.",
+
+        "Email delivery is unavailable on the free tier, so email confirmations are not sent.":
+            "E-postutskick fungerar inte på gratisnivån och därför skickas inga mejlbekräftelser.",
+
+        "Flows for creating and deleting accounts are now available, along with a demo password reset flow.":
+            "Det finns nu flöden för att skapa och radera konto samt ett demo-flöde för lösenordsåterställning.",
 
         "Full-stack task board developed with React, TypeScript and Tailwind CSS. The application displays tasks in Todo, Doing and Done columns, supports real-time search and provides a separate form for creating new tasks.":
             "Fullstack-task board utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar tasks i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya tasks.",
@@ -574,6 +601,32 @@ collectTextNodes(document.body);
 languageButtons.forEach((button) => {
     button.addEventListener("click", () => {
         setLanguage(button.dataset.lang);
+    });
+});
+
+const projectResourceMenus = document.querySelectorAll(".project-resource-menu");
+
+projectResourceMenus.forEach((menu) => {
+    menu.addEventListener("toggle", () => {
+        if (!menu.open) {
+            return;
+        }
+
+        projectResourceMenus.forEach((otherMenu) => {
+            if (otherMenu !== menu) {
+                otherMenu.open = false;
+            }
+        });
+    });
+});
+
+document.addEventListener("click", (event) => {
+    if (event.target.closest(".project-resource-menus")) {
+        return;
+    }
+
+    projectResourceMenus.forEach((menu) => {
+        menu.open = false;
     });
 });
 

@@ -41,7 +41,7 @@
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-10-31">Last updated: October 31, 2026</time>
+            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-11-01">Last updated: November 1, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">
@@ -174,7 +174,7 @@
                 <h3 class="project-column-title" id="school-projects-title">School Projects</h3>
                 <article class="project-card">
                     <div>
-                        <h3>Agile Webshop – React Frontend</h3>
+                        <h3 class="project-glow-title">Agile Webshop – React Frontend</h3>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work group">Group Work + Individual Extension</span>
@@ -196,7 +196,65 @@
                         <p>
                             As an independent extension, I added
                             a Stripe payment microservice with test Checkout, verified webhooks and order status updates.
+                            I also implemented account creation and deletion flows, a demo password reset flow and
+                            service status pages with links to the frontend, along with updated README files and Javadoc.
                         </p>
+                        <div class="project-resource-menus">
+                            <details class="project-resource-menu">
+                                <summary>GitHub repositories</summary>
+                                <div class="project-resource-content">
+                                    <ul class="project-resource-list">
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-auth-service" target="_blank" rel="noopener noreferrer">Auth Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-product-service" target="_blank" rel="noopener noreferrer">Product Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-order-service" target="_blank" rel="noopener noreferrer">Order Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-email-service" target="_blank" rel="noopener noreferrer">Email Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-gateway-service" target="_blank" rel="noopener noreferrer">Gateway Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-payment-service" target="_blank" rel="noopener noreferrer">Payment Service</a></li>
+                                        <li><a href="https://github.com/ynsuldg/microservices-webshop-frontend" target="_blank" rel="noopener noreferrer">Frontend</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                            <details class="project-resource-menu">
+                                <summary>Live services</summary>
+                                <div class="project-resource-content">
+                                    <ul class="project-resource-list">
+                                        <li><a href="https://microservices-webshop-auth-service.onrender.com" target="_blank" rel="noopener noreferrer">Auth Service</a></li>
+                                        <li><a href="https://microservices-webshop-product-service.onrender.com" target="_blank" rel="noopener noreferrer">Product Service</a></li>
+                                        <li><a href="https://microservices-webshop-order-service.onrender.com" target="_blank" rel="noopener noreferrer">Order Service</a></li>
+                                        <li><a href="https://microservices-webshop-email-service.onrender.com" target="_blank" rel="noopener noreferrer">Email Service</a></li>
+                                        <li><a href="https://microservices-webshop-gateway-service.onrender.com" target="_blank" rel="noopener noreferrer">Gateway Service</a></li>
+                                        <li><a href="https://microservices-webshop-payment-service.onrender.com" target="_blank" rel="noopener noreferrer">Payment Service</a></li>
+                                        <li><a href="https://microservices-webshop-frontend.onrender.com" target="_blank" rel="noopener noreferrer">Frontend</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
+                        <div class="alert alert-info project-resource-alert" role="note">
+                            <p>
+                                This is a school project created for educational and demonstration purposes. Payments
+                                are processed only in Stripe's test environment.
+                            </p>
+                            <p>
+                                For a test purchase, use Stripe's test card number
+                                <span class="no-wrap">4242 4242 4242 4242</span>. The remaining fields can contain test
+                                values, for example 12/34, 123 and Name Lastname. Read more in the
+                                <a href="https://github.com/ynsuldg/microservices-webshop-payment-service#readme"
+                                       target="_blank" rel="noopener noreferrer">repository README</a>.<br><br>
+                                The README file is only available in Swedish.
+                            </p>
+                            <p>
+                                The services run on Render's free tier and may therefore take a little while to wake up.
+                                Open the services above and wait until their status pages confirm that startup is
+                                complete before testing the application.
+                            </p>
+                            <p>
+                                Email delivery is unavailable on the free tier, so email confirmations are not sent.
+                            </p>
+                            <p>
+                                Flows for creating and deleting accounts are now available, along with a demo password
+                                reset flow.
+                            </p>
+                        </div>
                     </div>
                     <div class="tags">
                         <span>React</span>

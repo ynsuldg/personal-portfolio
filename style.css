@@ -76,6 +76,10 @@ a:hover {
     color: var(--primary-dark);
 }
 
+.no-wrap {
+    white-space: nowrap;
+}
+
 a:focus-visible,
 button:focus-visible,
 [tabindex]:focus-visible {
@@ -692,6 +696,174 @@ h3 {
     font-size: 0.9rem;
 }
 
+.project-resource-menus {
+    position: relative;
+    z-index: 20;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    margin-top: var(--action-offset);
+}
+
+.project-resource-menu {
+    position: relative;
+    min-width: 0;
+}
+
+.project-resource-menu[open] {
+    z-index: 1;
+}
+
+.project-resource-menu[open]::before,
+.project-resource-menu[open]::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    width: 0;
+    height: 0;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.project-resource-menu[open]::before {
+    top: calc(100% + 0.55rem - 9px);
+    right: calc(1.875rem - 8px);
+    border-bottom: 9px solid var(--border);
+}
+
+.project-resource-menu[open]::after {
+    top: calc(100% + 0.55rem - 7px);
+    right: calc(1.875rem - 7px);
+    border-right-width: 7px;
+    border-bottom: 8px solid var(--card);
+    border-left-width: 7px;
+}
+
+.project-resource-menu summary {
+    display: flex;
+    min-height: 2.85rem;
+    align-items: center;
+    padding: 0.78rem 3.5rem 0.78rem 1rem;
+    border: 1px solid color-mix(in srgb, var(--muted) 36%, var(--border));
+    border-radius: var(--radius-control);
+    background-color: color-mix(in srgb, var(--muted) 10%, var(--card));
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='8' viewBox='0 0 14 8'%3E%3Cpath d='M1 1l6 6 6-6' fill='none' stroke='%23cbd5e1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1.5rem center;
+    background-size: 0.75rem auto;
+    color: var(--text);
+    box-shadow: 0 6px 18px color-mix(in srgb, var(--text) 8%, transparent);
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 800;
+    line-height: 1.15;
+    list-style: none;
+    transition: transform 0.16s ease, box-shadow 0.16s ease,
+                background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+
+.project-resource-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-resource-menu summary:hover,
+.project-resource-menu[open] summary {
+    transform: translateY(-1px);
+    border-color: color-mix(in srgb, var(--primary) 64%, var(--border));
+    background-color: color-mix(in srgb, var(--primary) 10%, var(--card));
+    color: var(--primary);
+    box-shadow: 0 8px 22px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.project-resource-menu summary:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.project-resource-menu summary:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px color-mix(in srgb, var(--text) 10%, transparent);
+}
+
+.project-resource-content {
+    position: absolute;
+    top: calc(100% + 0.55rem);
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    max-height: min(30rem, 70vh);
+    overflow-y: auto;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-inner);
+    background: var(--card);
+    box-shadow: var(--shadow-md);
+}
+
+.project-resource-list {
+    display: grid;
+    gap: 0.4rem;
+    padding-left: 0;
+    list-style: none;
+}
+
+.project-resource-list a {
+    color: var(--primary-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.project-resource-list a::after {
+    content: " ↗";
+    font-size: 0.85em;
+}
+
+.project-resource-list a:hover,
+.project-resource-list a:focus-visible {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.alert {
+    margin: var(--action-offset) 0;
+    padding: 0.85rem 1rem;
+    border: 1px solid;
+    border-radius: 0;
+    font-weight: 700;
+}
+
+.alert-info {
+    border-color: color-mix(in srgb, var(--primary) 72%, var(--border));
+    background: color-mix(in srgb, var(--primary) 8%, var(--card));
+    color: var(--primary);
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--primary) 18%, transparent),
+                0 0 18px color-mix(in srgb, var(--primary) 16%, transparent);
+}
+
+.project-resource-alert {
+    margin-bottom: 0;
+}
+
+.project-resource-alert p {
+    color: inherit;
+}
+
+.project-resource-alert a {
+    color: var(--text);
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.project-resource-alert a:hover,
+.project-resource-alert a:focus-visible {
+    color: var(--primary-dark);
+}
+
+.project-resource-alert p + p {
+    margin-top: 1rem;
+}
+
 .project-meta,
 .tags {
     display: flex;
@@ -976,7 +1148,6 @@ h3 {
     .private-projects {
         order: -1;
     }
-
 }
 
 @media (max-width: 700px) {
@@ -995,7 +1166,6 @@ h3 {
         grid-row: auto;
         justify-self: center;
     }
-
 }
 
 @media (max-width: 560px) {
