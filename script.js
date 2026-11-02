@@ -448,6 +448,9 @@ const translations = {
         "I am committed, responsible and easy to collaborate with. I also have a good sense of humor and enjoy contributing to a positive atmosphere in the team. Although my focus so far has been Java, I am open to learning other programming languages and technologies.":
             "Som person är jag engagerad, ansvarstagande och lätt att samarbeta med. Jag har också nära till humor och bidrar gärna till en positiv stämning i teamet. Även om mitt fokus hittills har varit Java är jag öppen för att lära mig andra programmeringsspråk och tekniker.",
 
+        "Another advantage is that I am self-driven and manage well on my own, so I almost never need supervision. If the opportunity exists, I am happy to take charge of a new project. I am equally comfortable working remotely or on site, and I offer almost seven months of work at no cost to the company.":
+            "En annan fördel är att jag är självgående och klarar mig bra på egen hand, så jag behöver nästan aldrig handledning. Om möjligheten finns tar jag gärna hand om ett nytt projekt. Jag arbetar lika gärna på distans som på plats och erbjuder nästan sju månaders arbete utan kostnad för företaget.",
+
         "For me, an internship is an important step in completing my education and at the same time an opportunity to grow as a developer, expand my network and contribute my drive and interest in programming.":
             "För mig är LIA ett viktigt steg mot att slutföra min utbildning och samtidigt en möjlighet att växa som utvecklare, utöka mitt kontaktnät och bidra med mitt driv och intresse för programmering.",
 
