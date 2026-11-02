@@ -1186,4 +1186,8 @@ h3 {
     .project-updated {
         text-align: left;
     }
+
+    .project-resource-menus {
+        grid-template-columns: minmax(0, 1fr);
+    }
 }
