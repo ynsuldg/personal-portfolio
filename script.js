@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 1 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 2 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -119,7 +119,7 @@ const translations = {
         "Passenger Vehicle Technology": "Personbilsteknik",
         "Individual Electives": "Individuellt val",
         "Forklift Operator Certificate A, B and D": "Truckförarbevis A, B och D",
-        "MIG / MAG & TIG Welding": "MIG / MAG & TIG svets",
+        "MIG / MAG & TIG Welding": "MIG / MAG & TIG-svetsning",
 
         "Development": "Utveckling",
         "Development Tools": "Utvecklingsverktyg",
@@ -206,7 +206,7 @@ const translations = {
             "Det finns nu flöden för att skapa och radera konto samt ett demo-flöde för lösenordsåterställning.",
 
         "Full-stack task board developed with React, TypeScript and Tailwind CSS. The application displays tasks in Todo, Doing and Done columns, supports real-time search and provides a separate form for creating new tasks.":
-            "Fullstack-task board utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar tasks i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya tasks.",
+            "Fullstackapplikation för uppgiftshantering utvecklad med React, TypeScript och Tailwind CSS. Applikationen visar uppgifter i kolumnerna Todo, Doing och Done, har realtidssökning och erbjuder ett separat formulär för att skapa nya uppgifter.",
 
         "Tasks are loaded and created through a Node.js and Express REST API, with persistent storage in Neon PostgreSQL. React Router provides separate views for the task board and form, while Vitest and React Testing Library are used for component testing.":
             "Tasks hämtas och skapas via ett REST API byggt med Node.js och Express, med beständig lagring i Neon PostgreSQL. React Router ger separata vyer för task board och formulär, medan Vitest och React Testing Library används för komponenttestning.",
@@ -254,7 +254,7 @@ const translations = {
             "Separat projekt där jag byggde ett säkert inloggningsflöde med Spring Boot och Spring Security. Användaren kan registrera sig, välja om tvåfaktorsautentisering ska aktiveras och därefter logga in med lösenord samt en tidsbaserad kod från Microsoft Authenticator eller Google Authenticator.",
 
         "The project generates a secret key that is stored in PostgreSQL and embedded in a QR code that can be scanned by an authenticator app. Protected pages require both a successful login and a verified MFA code.":
-            "Projektet genererar en hemlig nyckel som sparas i PostgreSQL och bäddas in i en QR-kod som kan scannas av en authenticator-app. Skyddade sidor kräver både lyckad inloggning och verifierad MFA-kod.",
+            "Projektet genererar en hemlig nyckel som sparas i PostgreSQL och bäddas in i en QR-kod som kan skannas av en authenticator-app. Skyddade sidor kräver både lyckad inloggning och verifierad MFA-kod.",
 
         "Secure Webshop": "Säker webshop",
 
@@ -349,7 +349,7 @@ const translations = {
             "Projektet omfattade CRUD-operationer, filtrering, uppdatering och borttagning av dokument samt användning av MongoDB Java Driver för kommunikation mellan applikation och databas.",
 
         "Text-Based Adventure Game":
-            "Textbaserat Äventyrsspel",
+            "Textbaserat äventyrsspel",
 
         "Course 1: Java Programming":
             "Kurs 1: Java-programmering, 60 yhp",
@@ -361,7 +361,7 @@ const translations = {
             "Implementerade nya spelområden, fiender och spelmekaniker samt filbaserad lagring av statistik med DAO-mönstret, topplista, Builder Pattern för skapande av spelare och Singleton Pattern för applikationskonfiguration.",
 
         "Console-Based Webshop":
-            "Konsolbaserad Webshop",
+            "Konsolbaserad webshop",
 
         "Developed a console-based webshop in Java where users can create, search for and view products. The application uses object-oriented design with inheritance, abstract classes and polymorphism to handle different product types.":
             "Utvecklade en konsolbaserad webshop i Java där användaren kan skapa, söka och visa produkter. Applikationen använder objektorienterad design med arv, abstrakta klasser och polymorfism för att hantera olika produkttyper.",
@@ -370,7 +370,7 @@ const translations = {
             "Implementerade filbaserad lagring genom serialisering för att spara och läsa in produkter mellan körningar samt stöd för både konsolbaserat och dialogbaserat användargränssnitt via ett gemensamt interface.",
 
         "Basic Java – Methods and Arrays":
-            "Grundläggande Java – Metoder och Arrayer",
+            "Grundläggande Java – Metoder och arrayer",
 
         "One of the first lab assignments in the program, focused on fundamental Java programming. The assignment involved working with methods, arrays, loops, parameters and return values to build an understanding of the language's fundamental constructs.":
             "En av de första laborationerna under utbildningen med fokus på grundläggande Java-programmering. Uppgiften omfattade arbete med metoder, arrayer, loopar, parametrar och returvärden för att bygga upp förståelse för språkets grundläggande konstruktioner.",
@@ -383,7 +383,7 @@ const translations = {
         "Responsibilities:": "Uppgifter:",
 
         "Static security duties during both day and night shifts at a shopping center.":
-            "Stationär tjänst dag och natt på Shopping Center.",
+            "Stationär tjänst dag och natt på ett köpcentrum.",
 
         "Locking and unlocking premises, responding to fire alarms, staff assistance, reporting, handling unusual incidents and crime prevention.":
             "Låsning, upplåsning, brandlarmsåtgärd, personalservice, rapportering, åtgärd av andra avvikande påträffanden samt brottsförebyggning.",
@@ -401,7 +401,7 @@ const translations = {
             "Åtgärd av inbrottslarm (rörelsedetektor, magnetkontakt, glaskrossdetektor), kameralarm, brandlarm, överfallslarm, rapportering samt brottsförebyggning m.m.",
 
         "Static security duties during both day and night shifts at sites such as Ica Maxi, retail areas and events.":
-            "Stationär tjänst dag och natt på objekt som Ica Maxi, handelsplatser samt eventer.",
+            "Stationär tjänst dag och natt på objekt som Ica Maxi, handelsplatser samt evenemang.",
 
         "Locking and unlocking premises and crime prevention.":
             "Låsning, upplåsning samt brottsförebyggning.",
