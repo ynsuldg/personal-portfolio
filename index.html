@@ -41,7 +41,7 @@
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-11-02">Last updated: November 2, 2026</time>
+            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-11-03">Last updated: November 3, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">
@@ -170,11 +170,114 @@
         <p class="section-label">Projects</p>
         <h2>Projects</h2>
         <div class="project-columns">
+            <section aria-labelledby="private-projects-title" class="project-column private-projects">
+                <h3 class="project-column-title" id="private-projects-title">Private Projects</h3>
+                <article class="project-card private-project-card">
+                    <div>
+                        <h3>Football Club Platform</h3>
+                        <time class="project-updated" data-i18n-key="footballClubPlatformLastUpdated" datetime="2026-10-26">Last updated: October 26, 2026</time>
+                        <div class="project-meta">
+                            <span class="project-type project">Project</span>
+                            <span class="project-work individual">Individual Work</span>
+                            <span class="project-private">Private</span>
+                            <span class="project-status">In development</span>
+                        </div>
+                        <p>
+                            Full-stack football tournament platform where clubs organise tournaments from
+                            registration to final: categories with age-based game formats, groups by skill level,
+                            venues, referees, group and playoff fixtures, results and automatic standings.
+                        </p>
+                        <p>
+                            Built with secure account-free team links for squads and match line-ups, automatic
+                            playoff progression, formation-based line-ups and substitutions, two-factor
+                            authentication, email notifications, multilingual support, light/dark themes, automated
+                            tests, CI/CD and Docker. Paid access for tournament organisers and payment for team
+                            registrations are planned for a later launch.
+                        </p>
+                    </div>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Security</span>
+                        <span>Spring Data JPA</span>
+                        <span>TOTP 2FA / QR Code</span>
+                        <span>Thymeleaf</span>
+                        <span>HTML / CSS / JavaScript</span>
+                        <span>JUnit 5</span>
+                        <span>Mockito</span>
+                        <span>Maven</span>
+                        <span>Spring Mail / SMTP</span>
+                        <span>PostgreSQL</span>
+                        <span>H2</span>
+                        <span>Docker</span>
+                        <span>GitHub Actions</span>
+                    </div>
+                </article>
+                <article class="project-card private-project-card">
+                    <div>
+                        <div class="project-heading">
+                            <h3 class="project-glow-title">Smart Price Tracker</h3>
+                            <span class="project-live-status" data-project-status="paused"></span>
+                        </div>
+                        <time class="project-updated" data-i18n-key="smartPriceTrackerLastUpdated" datetime="2026-08-19">Last updated: August 19, 2026</time>
+                        <div class="project-meta">
+                            <span class="project-type project">Project</span>
+                            <span class="project-work individual">Individual Work</span>
+                            <span class="project-private">Private</span>
+                            <span class="project-status">Beta</span>
+                            <span class="project-status">In development</span>
+                        </div>
+                        <p>
+                            Full-stack price-tracking application where users can monitor product URLs, set target
+                            prices, review price history and receive configurable email notifications when prices
+                            change or reach their targets.
+                        </p>
+                        <p>
+                            Built as an independently developed production-style service with secure account management,
+                            Google OAuth 2.0, two-factor authentication, subscription-ready Stripe integration,
+                            RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker
+                            deployment on Render. The public Premium subscription is planned for a later launch.
+                        </p>
+                        <div class="project-actions">
+                            <span aria-disabled="true" class="btn primary disabled">Available at launch</span>
+                            <p class="project-launch-note">The application link will be activated when the project
+                                launches.</p>
+                        </div>
+                    </div>
+                    <div class="tags">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>Spring Security</span>
+                        <span>Spring Data JPA</span>
+                        <span>OAuth 2.0</span>
+                        <span>TOTP 2FA / QR Code</span>
+                        <span>Thymeleaf</span>
+                        <span>HTML / CSS / JavaScript</span>
+                        <span>Jsoup</span>
+                        <span>JUnit 5</span>
+                        <span>Playwright</span>
+                        <span>OpenAPI / Swagger</span>
+                        <span>Maven</span>
+                        <span>Resend</span>
+                        <span>RabbitMQ</span>
+                        <span>Stripe</span>
+                        <span>Neon PostgreSQL</span>
+                        <span>Flyway</span>
+                        <span>Docker</span>
+                        <span>GitHub Actions</span>
+                        <span>Render</span>
+                    </div>
+                </article>
+            </section>
             <section aria-labelledby="school-projects-title" class="project-column school-projects">
                 <h3 class="project-column-title" id="school-projects-title">School Projects</h3>
                 <article class="project-card">
                     <div>
-                        <h3 class="project-glow-title">Agile Webshop – React Frontend</h3>
+                        <div class="project-heading">
+                            <h3 class="project-glow-title">Agile Webshop – React Frontend</h3>
+                            <span class="project-live-status" data-project-status="live"></span>
+                        </div>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work group">Group Work + Individual Extension</span>
@@ -282,6 +385,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Task Board</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -314,6 +418,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Responsive Webshop</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -344,6 +449,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Microservices Webshop</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work group">Group Work</span>
@@ -376,6 +482,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Google Gemini AI Integration</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -409,6 +516,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Two-Factor Authentication with an Authenticator App</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work individual">Individual Work</span>
@@ -440,6 +548,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Secure Webshop</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work group">Group Work</span>
@@ -473,6 +582,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Real-Time Chat with Jakarta EE and WebSocket</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -503,6 +613,7 @@
                 <article class="project-card">
                     <div>
                         <h3>JavaTools – CRUD System with Spring Boot</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work group">Group Work + Individual Extension</span>
@@ -548,6 +659,7 @@
                 <article class="project-card">
                     <div>
                         <h3>ATM System – Spring Boot Application with Unit Testing and End-to-End Testing</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -587,6 +699,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Group Project – Spring Boot MVC Application with Thymeleaf</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work group">Group Work</span>
@@ -624,6 +737,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Chat Application with Java and Spring Boot</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work individual">Individual Work</span>
@@ -655,6 +769,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Database Access with JDBC</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -683,6 +798,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Database Modelling and SQL</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -711,6 +827,7 @@
                 <article class="project-card">
                     <div>
                         <h3>MongoDB and NoSQL Databases</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -737,6 +854,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Text-Based Adventure Game</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work individual">Individual Work</span>
@@ -767,6 +885,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Console-Based Webshop</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type project">Project</span>
                             <span class="project-work individual">Individual Work</span>
@@ -797,6 +916,7 @@
                 <article class="project-card">
                     <div>
                         <h3>Basic Java – Methods and Arrays</h3>
+                        <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
                             <span class="project-work individual">Individual Work</span>
@@ -820,106 +940,6 @@
                         <span>Loops</span>
                         <span>Parameters</span>
                         <span>Return Values</span>
-                    </div>
-                </article>
-            </section>
-            <section aria-labelledby="private-projects-title" class="project-column private-projects">
-                <h3 class="project-column-title" id="private-projects-title">Private Projects</h3>
-                <article class="project-card private-project-card">
-                    <div>
-                        <div class="project-title-row">
-                            <h3>Football Club Platform</h3>
-                            <time class="project-updated" data-i18n-key="footballClubPlatformLastUpdated" datetime="2026-10-26">Last updated: October 26, 2026</time>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-type project">Project</span>
-                            <span class="project-work individual">Individual Work</span>
-                            <span class="project-private">Private</span>
-                            <span class="project-status">In development</span>
-                        </div>
-                        <p>
-                            Full-stack football tournament platform where clubs organise tournaments from
-                            registration to final: categories with age-based game formats, groups by skill level,
-                            venues, referees, group and playoff fixtures, results and automatic standings.
-                        </p>
-                        <p>
-                            Built with secure account-free team links for squads and match line-ups, automatic
-                            playoff progression, formation-based line-ups and substitutions, two-factor
-                            authentication, email notifications, multilingual support, light/dark themes, automated
-                            tests, CI/CD and Docker. Paid access for tournament organisers and payment for team
-                            registrations are planned for a later launch.
-                        </p>
-                    </div>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Security</span>
-                        <span>Spring Data JPA</span>
-                        <span>TOTP 2FA / QR Code</span>
-                        <span>Thymeleaf</span>
-                        <span>HTML / CSS / JavaScript</span>
-                        <span>JUnit 5</span>
-                        <span>Mockito</span>
-                        <span>Maven</span>
-                        <span>Spring Mail / SMTP</span>
-                        <span>PostgreSQL</span>
-                        <span>H2</span>
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
-                    </div>
-                </article>
-                <article class="project-card private-project-card">
-                    <div>
-                        <div class="project-title-row">
-                            <h3 class="project-glow-title">Smart Price Tracker</h3>
-                            <time class="project-updated" data-i18n-key="smartPriceTrackerLastUpdated" datetime="2026-08-19">Last updated: August 19, 2026</time>
-                        </div>
-                        <div class="project-meta">
-                            <span class="project-type project">Project</span>
-                            <span class="project-work individual">Individual Work</span>
-                            <span class="project-private">Private</span>
-                            <span class="project-status">Beta</span>
-                            <span class="project-status">In development</span>
-                        </div>
-                        <p>
-                            Full-stack price-tracking application where users can monitor product URLs, set target
-                            prices, review price history and receive configurable email notifications when prices
-                            change or reach their targets.
-                        </p>
-                        <p>
-                            Built as an independently developed production-style service with secure account management,
-                            Google OAuth 2.0, two-factor authentication, subscription-ready Stripe integration,
-                            RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker
-                            deployment on Render. The public Premium subscription is planned for a later launch.
-                        </p>
-                        <div class="project-actions">
-                            <span aria-disabled="true" class="btn primary disabled">Available at launch</span>
-                            <p class="project-launch-note">The application link will be activated when the project
-                                launches.</p>
-                        </div>
-                    </div>
-                    <div class="tags">
-                        <span>Java</span>
-                        <span>Spring Boot</span>
-                        <span>Spring Security</span>
-                        <span>Spring Data JPA</span>
-                        <span>OAuth 2.0</span>
-                        <span>TOTP 2FA / QR Code</span>
-                        <span>Thymeleaf</span>
-                        <span>HTML / CSS / JavaScript</span>
-                        <span>Jsoup</span>
-                        <span>JUnit 5</span>
-                        <span>Playwright</span>
-                        <span>OpenAPI / Swagger</span>
-                        <span>Maven</span>
-                        <span>Resend</span>
-                        <span>RabbitMQ</span>
-                        <span>Stripe</span>
-                        <span>Neon PostgreSQL</span>
-                        <span>Flyway</span>
-                        <span>Docker</span>
-                        <span>GitHub Actions</span>
-                        <span>Render</span>
                     </div>
                 </article>
             </section>

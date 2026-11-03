@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 2 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 3 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -127,15 +127,12 @@ const translations = {
         "Playwright / End-to-End Testing": "Playwright / End-to-End-testning",
         "DevOps & Deployment": "DevOps & Driftsättning",
 
-        "School Projects": "Skolprojekt",
         "Private Projects": "Privata projekt",
-        "Private": "Privat",
+        "School Projects": "Skolprojekt",
 
         "Football Club Platform": "Football Club Platform",
 
         footballClubPlatformLastUpdated: "Senast uppdaterad: 26 oktober 2026",
-
-        "In development": "Under utveckling",
 
         "Full-stack football tournament platform where clubs organise tournaments from registration to final: categories with age-based game formats, groups by skill level, venues, referees, group and playoff fixtures, results and automatic standings.":
             "Fullstackplattform för fotbollsturneringar där klubbar arrangerar turneringar från anmälan till final: kategorier med åldersbaserade spelformer, grupper efter nivå, spelplatser, domare, grupp- och slutspelsmatcher, resultat och automatiska tabeller.",
@@ -158,16 +155,46 @@ const translations = {
         "The application link will be activated when the project launches.":
             "Länken till applikationen aktiveras i samband med lanseringen.",
 
+        "Paused": "Pausad",
+
         "Group Work": "Grupparbete",
+
         "Individual Work": "Individuellt arbete",
-        "Lab Assignment": "Laboration",
+
+        "Group Work + Individual Extension":
+            "Grupparbete + individuellt vidarearbete",
+
         "Project": "Projekt",
 
-        "Agile Webshop – React Frontend":
-            "Agil webshop – React-frontend",
+        "Lab Assignment": "Laboration",
+
+        "In development": "Under utveckling",
+
+        "Private": "Privat",
 
         "Course 7: Agile Development":
             "Kurs 7: Agil utveckling, 20 yhp",
+
+        "Course 6: Web Application Development":
+            "Kurs 6: Utveckling av webbapplikationer, 45 yhp",
+
+        "Course 5: Web Services and Integrations":
+            "Kurs 5: Web services och integrationer, 30 yhp",
+
+        "Course 4: Enterprise Java Development":
+            "Kurs 4: Komplex Java-programmering, 40 yhp",
+
+        "Course 3: Java Tools and Build Environments":
+            "Kurs 3: Javaverktyg och byggmiljöer, 30 yhp",
+
+        "Course 2: Database Development":
+            "Kurs 2: Utveckling mot databaser, 35 yhp",
+
+        "Course 1: Java Programming":
+            "Kurs 1: Java-programmering, 60 yhp",
+
+        "Agile Webshop – React Frontend":
+            "Agil webshop – React-frontend",
 
         "Completed in a team of three, this webshop combines a React and TypeScript frontend with Spring Boot microservices through an API gateway. Features include JWT authentication, a searchable product catalog, category filters, a shopping cart and role-based product administration. The frontend and backend services were deployed on Render using Docker images.":
             "Webshop färdigställd i en grupp om tre personer, med en frontend i React och TypeScript som ansluter till mikrotjänster i Spring Boot via en API-gateway. Funktionerna omfattar JWT-autentisering, sökbar produktkatalog, kategorifilter, kundvagn och rollbaserad produktadministration. Frontend och backendtjänsterna driftsattes på Render med Docker-images.",
@@ -214,9 +241,6 @@ const translations = {
         "Responsive Webshop":
             "Responsiv webshop",
 
-        "Course 6: Web Application Development":
-            "Kurs 6: Utveckling av webbapplikationer, 45 yhp",
-
         "Responsive webshop developed with semantic HTML, CSS and JavaScript. The website includes a product catalog, featured products, a shopping cart, accessible forms and media content, with layouts adapted for desktop, tablet and mobile devices.":
             "Responsiv webshop utvecklad med semantisk HTML, CSS och JavaScript. Webbplatsen innehåller en produktkatalog, utvalda produkter, en varukorg, tillgängliga formulär och medieinnehåll samt layouter anpassade för dator, surfplatta och mobil.",
 
@@ -225,9 +249,6 @@ const translations = {
 
         "Microservices Webshop":
             "Webshop med mikrotjänster",
-
-        "Course 5: Web Services and Integrations":
-            "Kurs 5: Web services och integrationer, 30 yhp",
 
         "Backend for a webshop built with a microservices architecture. The system consists of an Auth Server, Product Service, Order Service and Email Service. Communication is handled through REST and RabbitMQ, JWT is used for authentication, and PostgreSQL is used for data storage.":
             "Backend till en webshop byggd med mikrotjänstarkitektur. Systemet består av Auth-server, Product-service, Order-service och Email-service. Kommunikation sker via REST och RabbitMQ, JWT används för autentisering och PostgreSQL används för lagring.",
@@ -246,9 +267,6 @@ const translations = {
 
         "Two-Factor Authentication with an Authenticator App":
             "Tvåfaktorsautentisering med Authenticator-app",
-
-        "Course 4: Enterprise Java Development":
-            "Kurs 4: Komplex Java-programmering, 40 yhp",
 
         "A standalone project where I built a secure login flow with Spring Boot and Spring Security. Users can register, choose whether to enable two-factor authentication, and then sign in using a password and a time-based code from Microsoft Authenticator or Google Authenticator.":
             "Separat projekt där jag byggde ett säkert inloggningsflöde med Spring Boot och Spring Security. Användaren kan registrera sig, välja om tvåfaktorsautentisering ska aktiveras och därefter logga in med lösenord samt en tidsbaserad kod från Microsoft Authenticator eller Google Authenticator.",
@@ -275,12 +293,6 @@ const translations = {
 
         "JavaTools – CRUD System with Spring Boot":
             "JavaTools – CRUD-system med Spring Boot",
-
-        "Group Work + Individual Extension":
-            "Grupparbete + individuellt vidarearbete",
-
-        "Course 3: Java Tools and Build Environments":
-            "Kurs 3: Javaverktyg och byggmiljöer, 30 yhp",
 
         "Team-developed web application built with Spring Boot for managing the Drink, Food, Pizza and Spirit resources. The application follows the MVC architecture and provides full CRUD functionality with Thymeleaf as the presentation layer and PostgreSQL (Neon) as the database. I containerized the application with Docker and was responsible for deployment on Render.":
             "Grupputvecklad webbapplikation byggd med Spring Boot för hantering av resurserna Drink, Food, Pizza och Spirit. Applikationen följer MVC-arkitektur och erbjuder full CRUD-funktionalitet med Thymeleaf som presentationslager och PostgreSQL (Neon) som databas. Jag Dockeriserade applikationen och ansvarade för driftsättning på Render.",
@@ -311,9 +323,6 @@ const translations = {
 
         "Chat Application with Java and Spring Boot":
             "Chattapplikation med Java och Spring Boot",
-
-        "Course 2: Database Development":
-            "Kurs 2: Utveckling mot databaser, 35 yhp",
 
         "Developed a client-server chat application where multiple users can connect simultaneously, register accounts, log in and send messages in real time. Communication between client and server takes place via Java Sockets, and the server handles multiple clients in parallel using multithreading.":
             "Utvecklade en klient-serverbaserad chattapplikation där flera användare kan ansluta samtidigt, registrera konton, logga in och skicka meddelanden i realtid. Kommunikation mellan klient och server sker via Java Sockets och servern hanterar flera klienter parallellt med hjälp av multitrådning.",
@@ -350,9 +359,6 @@ const translations = {
 
         "Text-Based Adventure Game":
             "Textbaserat äventyrsspel",
-
-        "Course 1: Java Programming":
-            "Kurs 1: Java-programmering, 60 yhp",
 
         "Individual extension of a text-based adventure game in Java based on a provided starter project. The game is built on object-oriented principles where the player explores different environments, fights enemies, collects items and develops their character.":
             "Individuell vidareutveckling av ett textbaserat äventyrsspel i Java utifrån ett tillhandahållet grundprojekt. Spelet bygger på objektorienterade principer där spelaren utforskar olika miljöer, bekämpar fiender, samlar föremål och utvecklar sin karaktär.",
@@ -464,6 +470,32 @@ const translations = {
         "All rights reserved.": "Alla rättigheter förbehållna."
     }
 };
+
+/*
+ * Statustaggar för projektkorten. Lägg till data-project-status="live",
+ * "paused" eller "offline" på en .project-live-status i HTML.
+ */
+const projectStatuses = {
+    live: "Live",
+    paused: "Paused",
+    offline: "Offline"
+};
+
+document.querySelectorAll("[data-project-status]").forEach((tag) => {
+    const status = tag.dataset.projectStatus;
+    const label = projectStatuses[status];
+
+    if (!label) {
+        return;
+    }
+
+    const dot = document.createElement("span");
+    dot.className = "project-live-dot";
+    dot.setAttribute("aria-hidden", "true");
+
+    tag.classList.add(status);
+    tag.replaceChildren(dot, label);
+});
 
 const languageButtons = document.querySelectorAll(".language-option");
 const textNodes = [];
