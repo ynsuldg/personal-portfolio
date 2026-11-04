@@ -243,6 +243,9 @@ const translations = {
         "Product data is loaded asynchronously from a JSON file using the Fetch API and rendered dynamically. The project also focuses on accessibility through descriptive alternative text, keyboard-visible focus indicators and WCAG-compliant color contrast.":
             "Produktdata hämtas asynkront från en JSON-fil med Fetch API och renderas dynamiskt. Projektet fokuserar även på tillgänglighet genom beskrivande alternativtexter, tydliga fokusmarkeringar för tangentbordsnavigering och färgkontraster som följer WCAG.",
 
+        "This is a school project created for educational and demonstration purposes.":
+            "Detta är ett skolprojekt för utbildnings- och demonstrationssyfte.",
+
         "Microservices Webshop":
             "Webshop med mikrotjänster",
 
