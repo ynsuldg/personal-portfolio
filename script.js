@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 3 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 4 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -149,11 +149,6 @@ const translations = {
 
         "Built as an independently developed production-style service with secure account management, Google OAuth 2.0, two-factor authentication, subscription-ready Stripe integration, RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker deployment on Render. The public Premium subscription is planned for a later launch.":
             "Utvecklad självständigt som en produktionsliknande tjänst med säker kontohantering, Google OAuth 2.0, tvåfaktorsautentisering, prenumerationsförberedd Stripe-integration, RabbitMQ-baserad notifikationshantering, automatiserade tester, CI/CD och en ständigt aktiv Docker-driftsättning på Render. Den publika Premium-prenumerationen planeras för en senare lansering.",
-
-        "Available at launch": "Tillgänglig vid lansering",
-
-        "The application link will be activated when the project launches.":
-            "Länken till applikationen aktiveras i samband med lanseringen.",
 
         "Paused": "Pausad",
 
@@ -384,6 +379,9 @@ const translations = {
         "Implemented functions for printing arrays, finding the largest value and methods with parameters and return values. The project laid the foundation for later work with object-oriented programming.":
             "Implementerade funktioner för utskrift av arrayer, sökning efter största värde samt metoder med parametrar och returvärden. Projektet lade grunden för senare arbete med objektorienterad programmering.",
 
+        "Open website": "Öppna webbplatsen",
+        "View on GitHub": "Visa på GitHub",
+
         "Work Experience": "Arbetslivserfarenhet",
         "Role:": "Tjänst:",
         "Responsibilities:": "Uppgifter:",
@@ -495,6 +493,48 @@ document.querySelectorAll("[data-project-status]").forEach((tag) => {
 
     tag.classList.add(status);
     tag.replaceChildren(dot, label);
+});
+
+/*
+ * Länkknappar för projektkorten. Lägg till data-live-url och/eller
+ * data-repo-url på en .project-actions i HTML. Webbplatsknappen är
+ * inaktiverad när länken saknas eller kortets status inte är "live".
+ */
+function createProjectButton(label, variant, url) {
+    const button = document.createElement(url ? "a" : "span");
+    button.className = `btn ${variant}`;
+    button.textContent = label;
+
+    if (url) {
+        button.href = url;
+        button.target = "_blank";
+        button.rel = "noopener noreferrer";
+    } else {
+        button.classList.add("disabled");
+        button.setAttribute("aria-disabled", "true");
+    }
+
+    return button;
+}
+
+document.querySelectorAll(".project-actions").forEach((actions) => {
+    const {liveUrl, repoUrl} = actions.dataset;
+    const status = actions
+        .closest(".project-card")
+        ?.querySelector("[data-project-status]")
+        ?.dataset.projectStatus;
+    const buttons = [];
+
+    if (liveUrl !== undefined) {
+        const isLive = liveUrl && (!status || status === "live");
+        buttons.push(createProjectButton("Open website", "primary", isLive ? liveUrl : null));
+    }
+
+    if (repoUrl) {
+        buttons.push(createProjectButton("View on GitHub", "secondary", repoUrl));
+    }
+
+    actions.replaceChildren(...buttons);
 });
 
 const languageButtons = document.querySelectorAll(".language-option");

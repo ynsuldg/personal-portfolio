@@ -41,7 +41,7 @@
 <main>
     <section class="hero section" id="home">
         <div class="hero-content">
-            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-11-03">Last updated: November 3, 2026</time>
+            <time class="portfolio-updated" data-i18n-key="portfolioLastUpdated" datetime="2026-11-04">Last updated: November 4, 2026</time>
             <p class="eyebrow">Java Developer Student</p>
             <h1>Hi, my name is <span>Yunus Uludag</span></h1>
             <p class="lead">
@@ -170,9 +170,9 @@
         <p class="section-label">Projects</p>
         <h2>Projects</h2>
         <div class="project-columns">
-            <section aria-labelledby="private-projects-title" class="project-column private-projects">
+            <section aria-labelledby="private-projects-title" class="project-column">
                 <h3 class="project-column-title" id="private-projects-title">Private Projects</h3>
-                <article class="project-card private-project-card">
+                <article class="project-card">
                     <div>
                         <h3>Football Club Platform</h3>
                         <time class="project-updated" data-i18n-key="footballClubPlatformLastUpdated" datetime="2026-10-26">Last updated: October 26, 2026</time>
@@ -213,7 +213,7 @@
                         <span>GitHub Actions</span>
                     </div>
                 </article>
-                <article class="project-card private-project-card">
+                <article class="project-card">
                     <div>
                         <div class="project-heading">
                             <h3 class="project-glow-title">Smart Price Tracker</h3>
@@ -238,11 +238,7 @@
                             RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker
                             deployment on Render. The public Premium subscription is planned for a later launch.
                         </p>
-                        <div class="project-actions">
-                            <span aria-disabled="true" class="btn primary disabled">Available at launch</span>
-                            <p class="project-launch-note">The application link will be activated when the project
-                                launches.</p>
-                        </div>
+                        <div class="project-actions" data-live-url=""></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -269,7 +265,7 @@
                     </div>
                 </article>
             </section>
-            <section aria-labelledby="school-projects-title" class="project-column school-projects">
+            <section aria-labelledby="school-projects-title" class="project-column">
                 <h3 class="project-column-title" id="school-projects-title">School Projects</h3>
                 <article class="project-card">
                     <div>
@@ -401,6 +397,7 @@
                             in Neon PostgreSQL. React Router provides separate views for the task board and form, while
                             Vitest and React Testing Library are used for component testing.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/task-board-react"></div>
                     </div>
                     <div class="tags">
                         <span>React</span>
@@ -417,7 +414,10 @@
                 </article>
                 <article class="project-card">
                     <div>
-                        <h3>Responsive Webshop</h3>
+                        <div class="project-heading">
+                            <h3>Responsive Webshop</h3>
+                            <span class="project-live-status" data-project-status="live"></span>
+                        </div>
                         <span class="project-updated" aria-hidden="true"></span>
                         <div class="project-meta">
                             <span class="project-type lab">Lab Assignment</span>
@@ -434,6 +434,7 @@
                             dynamically. The project also focuses on accessibility through descriptive alternative
                             text, keyboard-visible focus indicators and WCAG-compliant color contrast.
                         </p>
+                        <div class="project-actions" data-live-url="https://ynsuldg.github.io/responsive-webshop/" data-repo-url="https://github.com/ynsuldg/responsive-webshop"></div>
                     </div>
                     <div class="tags">
                         <span>HTML</span>
@@ -499,6 +500,7 @@
                             a history view. The Gemini integration was implemented manually using HTTP requests and JSON
                             data to gain a deeper understanding of API communication and external services.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/gemini-ai-integration"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -532,6 +534,7 @@
                             that can be scanned by an authenticator app. Protected pages require both a successful login
                             and a verified MFA code.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/two-factor-authentication"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -565,6 +568,7 @@
                             ProductRepository, ProductService, the product page, an admin function for creating
                             products, and tests using both an H2 database and a mocked repository.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/secure-webshop"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -597,6 +601,17 @@
                             Implemented user registration, authentication and session management, and developed a
                             separate WebSocket server that enables real-time communication between connected clients.
                         </p>
+                        <div class="project-resource-menus">
+                            <details class="project-resource-menu">
+                                <summary>GitHub repositories</summary>
+                                <div class="project-resource-content">
+                                    <ul class="project-resource-list">
+                                        <li><a href="https://github.com/ynsuldg/realtime-chat-jakarta-ee" target="_blank" rel="noopener noreferrer">Jakarta EE Chat</a></li>
+                                        <li><a href="https://github.com/ynsuldg/realtime-chat-websocket-server" target="_blank" rel="noopener noreferrer">WebSocket Server</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -635,6 +650,17 @@
                             logging and integration tests with Spring Boot, MockMvc and H2 to automate the build,
                             testing and quality assurance process.
                         </p>
+                        <div class="project-resource-menus">
+                            <details class="project-resource-menu">
+                                <summary>GitHub repositories</summary>
+                                <div class="project-resource-content">
+                                    <ul class="project-resource-list">
+                                        <li><a href="https://github.com/ynsuldg/javatools-crud" target="_blank" rel="noopener noreferrer">JavaTools CRUD</a></li>
+                                        <li><a href="https://github.com/ynsuldg/javatools-crud-jenkins" target="_blank" rel="noopener noreferrer">JavaTools CRUD + Jenkins</a></li>
+                                    </ul>
+                                </div>
+                            </details>
+                        </div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -678,6 +704,7 @@
                             the web interface. The tests verify both normal user flows and error handling to ensure that
                             the application works correctly throughout the stack.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/atm-system-testing"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -718,6 +745,7 @@
                             use of model objects and structuring a Java-based web application according to established
                             design principles.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/spring-mvc-group-project"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -754,6 +782,7 @@
                             MySQL. The project follows a layered architecture with separate service, repository and
                             domain layers and includes unit tests written with JUnit and Mockito.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/spring-boot-chat-app"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -785,6 +814,7 @@
                             includes management of database connections, PreparedStatements and mapping between database
                             tables and Java objects.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/jdbc-database-access"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -814,6 +844,7 @@
                             modelling relationships between tables and using JOIN queries to retrieve related
                             information from multiple tables.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/sql-database-modelling"></div>
                     </div>
                     <div class="tags">
                         <span>SQL</span>
@@ -841,6 +872,7 @@
                             The project included CRUD operations, filtering, updating and deleting documents, as well as
                             using the MongoDB Java Driver for communication between the application and database.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/mongodb-nosql"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -870,6 +902,7 @@
                             statistics using the DAO pattern, a leaderboard, the Builder Pattern for creating players
                             and the Singleton Pattern for application configuration.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/text-adventure-game"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -901,6 +934,7 @@
                             as well as support for both console-based and dialog-based user interfaces through a common
                             interface.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/console-webshop"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>
@@ -932,6 +966,7 @@
                             parameters and return values. The project laid the foundation for later work with
                             object-oriented programming.
                         </p>
+                        <div class="project-actions" data-repo-url="https://github.com/ynsuldg/java-methods-and-arrays"></div>
                     </div>
                     <div class="tags">
                         <span>Java</span>

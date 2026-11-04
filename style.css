@@ -752,12 +752,10 @@ h3 {
 }
 
 .project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--action-gap);
     margin-top: var(--action-offset);
-}
-
-.project-launch-note {
-    margin-top: 0.65rem;
-    font-size: 0.9rem;
 }
 
 .project-resource-menus {
