@@ -519,16 +519,20 @@ function createProjectButton(label, variant, url) {
     return button;
 }
 
-document.querySelectorAll(".project-actions").forEach((actions) => {
-    const {liveUrl, repoUrl} = actions.dataset;
-    const status = actions
-        .closest(".project-card")
-        ?.querySelector("[data-project-status]")
-        ?.dataset.projectStatus;
+/*
+ * Kort som inte är live visar webbplatsknappen inaktiverad, även utan
+ * data-live-url. Kort med flera repon får knappen före sina menyer.
+ */
+document.querySelectorAll(".project-card").forEach((card) => {
+    const actions = card.querySelector(".project-actions");
+    const menus = card.querySelector(".project-resource-menus");
+    const status = card.querySelector("[data-project-status]")?.dataset.projectStatus;
+    const {liveUrl, repoUrl} = actions?.dataset ?? {};
+    const isLive = liveUrl && (!status || status === "live");
+    const showLiveButton = liveUrl !== undefined || (status && status !== "live");
     const buttons = [];
 
-    if (liveUrl !== undefined) {
-        const isLive = liveUrl && (!status || status === "live");
+    if (showLiveButton) {
         buttons.push(createProjectButton("Open website", "primary", isLive ? liveUrl : null));
     }
 
@@ -536,7 +540,11 @@ document.querySelectorAll(".project-actions").forEach((actions) => {
         buttons.push(createProjectButton("View on GitHub", "secondary", repoUrl));
     }
 
-    actions.replaceChildren(...buttons);
+    if (actions) {
+        actions.replaceChildren(...buttons);
+    } else if (menus) {
+        menus.prepend(...buttons);
+    }
 });
 
 const languageButtons = document.querySelectorAll(".language-option");
