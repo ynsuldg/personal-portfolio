@@ -151,6 +151,7 @@ const translations = {
             "Utvecklad självständigt som en produktionsliknande tjänst med säker kontohantering, Google OAuth 2.0, tvåfaktorsautentisering, prenumerationsförberedd Stripe-integration, RabbitMQ-baserad notifikationshantering, automatiserade tester, CI/CD och en ständigt aktiv Docker-driftsättning på Render. Den publika Premium-prenumerationen planeras för en senare lansering.",
 
         "Paused": "Pausad",
+        "Not deployed": "Ej driftsatt",
 
         "Group Work": "Grupparbete",
 
@@ -471,12 +472,13 @@ const translations = {
 
 /*
  * Statustaggar för projektkorten. Lägg till data-project-status="live",
- * "paused" eller "offline" på en .project-live-status i HTML.
+ * "paused", "offline" eller "not-deployed" på en .project-live-status i HTML.
  */
 const projectStatuses = {
     live: "Live",
     paused: "Paused",
-    offline: "Offline"
+    offline: "Offline",
+    "not-deployed": "Not deployed"
 };
 
 document.querySelectorAll("[data-project-status]").forEach((tag) => {
