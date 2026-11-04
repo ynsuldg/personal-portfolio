@@ -722,9 +722,12 @@ h3 {
     color: var(--danger);
 }
 
-.project-live-status.paused,
-.project-live-status.not-deployed {
+.project-live-status.paused {
     color: var(--muted);
+}
+
+.project-live-status.not-deployed {
+    color: var(--stock-warning);
 }
 
 .project-live-dot {
