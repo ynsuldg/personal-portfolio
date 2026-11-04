@@ -205,11 +205,9 @@ const translations = {
 
         "Live services": "Driftsatta tjänster",
 
-        "This is a school project created for educational and demonstration purposes. Payments are processed only in Stripe's test environment.":
-            "Detta är ett skolprojekt för utbildnings- och demonstrationssyfte. Betalningar hanteras endast i Stripes testmiljö.",
 
-        "For a test purchase, use Stripe's test card number":
-            "Använd Stripes testkortsnummer vid ett testköp",
+        "Payments are processed only in Stripe's test environment. For a test purchase, use Stripe's test card number":
+            "Betalningar hanteras endast i Stripes testmiljö. Använd Stripes testkortsnummer vid ett testköp",
 
         ". The remaining fields can contain test values, for example 12/34, 123 and Name Lastname. Read more in the":
             ". Övriga fält kan fyllas med testvärden, exempelvis 12/34, 123 och Name Lastname. Läs mer i repots",
@@ -219,11 +217,13 @@ const translations = {
         "The README file is only available in Swedish.":
             "README-filen är endast tillgänglig på svenska.",
 
-        "The services run on Render's free tier and may therefore take a little while to wake up. Open the services above and wait until their status pages confirm that startup is complete before testing the application.":
-            "Tjänsterna körs på Renders kostnadsfria nivå och kan därför ta en liten stund att starta. Öppna tjänsterna ovan och invänta att statussidorna bekräftar att uppstarten är klar innan applikationen testas.",
+        "Open the services above and wait until their status pages confirm that startup is complete before testing the application.":
+            "Öppna tjänsterna ovan och invänta att statussidorna bekräftar att uppstarten är klar innan applikationen testas.",
 
-        "Email delivery is unavailable on the free tier, so email confirmations are not sent.":
-            "E-postutskick fungerar inte på gratisnivån och därför skickas inga mejlbekräftelser.",
+        "The application runs on Render's free tier, which puts it to sleep after 15 minutes of inactivity. Starting it again may take up to a minute.":
+            "Applikationen körs på Renders gratisversion, som försätter den i viloläge efter 15 minuters inaktivitet. Att starta den igen kan ta upp till en minut.",
+        "Render's free tier blocks outgoing email. Email confirmations are therefore not sent.":
+            "Renders gratisversion blockerar utgående e-post. E-postbekräftelser skickas därför inte.",
 
         "Flows for creating and deleting accounts are now available, along with a demo password reset flow.":
             "Det finns nu flöden för att skapa och radera konto samt ett demo-flöde för lösenordsåterställning.",
@@ -249,8 +249,8 @@ const translations = {
         "The deployed version currently only shows an error page and has therefore been taken down. This will be fixed later.":
             "Den driftsatta versionen visar för närvarande bara en felsida och har därför tagits ner. Detta ska åtgärdas längre fram.",
 
-        "Accounts can be registered, but signing in requires a login link sent by email. The link cannot be delivered because Render's free tier blocks outgoing email.":
-            "Det går att registrera ett konto, men inloggningen kräver en länk som skickas via e-post. Länken kan inte levereras eftersom Renders gratisversion blockerar utgående e-post.",
+        "Render's free tier blocks outgoing email. Accounts can be registered, but the login link required to sign in is therefore not sent.":
+            "Renders gratisversion blockerar utgående e-post. Konton kan registreras, men inloggningslänken som krävs för att logga in skickas därför inte.",
 
         "The application has no CSS styling, as the focus was on the security functionality. To test two-factor authentication, select it when creating an account, scan the QR code with an authenticator app and confirm the code. The account is only created once the code has been confirmed.":
             "Applikationen saknar CSS-styling eftersom fokus låg på säkerhetsfunktionerna. För att testa tvåfaktorsautentisering väljer du det när du skapar ett konto, skannar QR-koden med en autentiseringsapp och bekräftar koden. Kontot skapas först när koden har bekräftats.",
