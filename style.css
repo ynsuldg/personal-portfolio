@@ -661,6 +661,7 @@ h3 {
     grid-template-columns: 1.3fr 0.7fr;
     gap: 2rem;
     margin-bottom: var(--action-gap);
+    scroll-margin-top: calc(76px + var(--action-gap));
     transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 

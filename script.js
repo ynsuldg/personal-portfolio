@@ -385,6 +385,7 @@ const translations = {
 
         "Open website": "Öppna webbplatsen",
         "View on GitHub": "Visa på GitHub",
+        "View the extended version": "Visa den vidareutvecklade versionen",
 
         "Work Experience": "Arbetslivserfarenhet",
         "Role:": "Tjänst:",
@@ -525,6 +526,7 @@ function createProjectButton(label, variant, url) {
 /*
  * Kort som inte är live visar webbplatsknappen inaktiverad, även utan
  * data-live-url. Kort med flera repon får knappen före sina menyer.
+ * Knappar som redan står i .project-actions i HTML behålls efter de skapade.
  */
 document.querySelectorAll(".project-card").forEach((card) => {
     const actions = card.querySelector(".project-actions");
@@ -544,7 +546,7 @@ document.querySelectorAll(".project-card").forEach((card) => {
     }
 
     if (actions) {
-        actions.replaceChildren(...buttons);
+        actions.prepend(...buttons);
     } else if (menus) {
         menus.prepend(...buttons);
     }
