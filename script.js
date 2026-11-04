@@ -261,8 +261,8 @@ const translations = {
         "The solution uses Thymeleaf for the frontend, PostgreSQL for data storage and Spring Data JPA for database access. Each question and answer is stored in the database and displayed in a history view. The Gemini integration was implemented manually using HTTP requests and JSON data to gain a deeper understanding of API communication and external services.":
             "Lösningen använder Thymeleaf för frontend, PostgreSQL för datalagring och Spring Data JPA för databasåtkomst. Varje fråga och svar sparas i databasen och visas i en historikvy. Integrationen mot Gemini implementerades manuellt med HTTP-anrop och JSON-data för att ge en djupare förståelse för API-kommunikation och externa tjänster.",
 
-        "Two-Factor Authentication with an Authenticator App":
-            "Tvåfaktorsautentisering med Authenticator-app",
+        "Two-Factor Authentication":
+            "Tvåfaktorsautentisering",
 
         "A standalone project where I built a secure login flow with Spring Boot and Spring Security. Users can register, choose whether to enable two-factor authentication, and then sign in using a password and a time-based code from Microsoft Authenticator or Google Authenticator.":
             "Separat projekt där jag byggde ett säkert inloggningsflöde med Spring Boot och Spring Security. Användaren kan registrera sig, välja om tvåfaktorsautentisering ska aktiveras och därefter logga in med lösenord samt en tidsbaserad kod från Microsoft Authenticator eller Google Authenticator.",
@@ -278,8 +278,8 @@ const translations = {
         "My main responsibility was the product area, where I worked with the Product entity, ProductRepository, ProductService, the product page, an admin function for creating products, and tests using both an H2 database and a mocked repository.":
             "Mitt huvudansvar var produktdelen där jag arbetade med Product-entity, ProductRepository, ProductService, produktsidan, adminfunktion för att skapa produkter samt tester mot både H2-databas och mockat repository.",
 
-        "Real-Time Chat with Jakarta EE and WebSocket":
-            "Realtidschatt med Jakarta EE och WebSocket",
+        "Real-Time Chat with Jakarta EE":
+            "Realtidschatt med Jakarta EE",
 
         "Developed a web application with Jakarta EE where users can register accounts, log in and communicate in real time. The application uses JSF as the presentation layer, CDI for dependency injection, JPA for database management and PostgreSQL for storing user data.":
             "Utvecklade en webbapplikation med Jakarta EE där användare kan registrera konton, logga in och kommunicera i realtid. Applikationen använder JSF som presentationslager, CDI för dependency injection, JPA för databashantering och PostgreSQL för lagring av användaruppgifter.",
@@ -287,8 +287,8 @@ const translations = {
         "Implemented user registration, authentication and session management, and developed a separate WebSocket server that enables real-time communication between connected clients.":
             "Implementerade användarregistrering, autentisering och sessionshantering samt utvecklade en separat WebSocket-server som möjliggör realtidskommunikation genom att skicka meddelanden mellan anslutna klienter i realtid.",
 
-        "JavaTools – CRUD System with Spring Boot":
-            "JavaTools – CRUD-system med Spring Boot",
+        "JavaTools CRUD System":
+            "JavaTools CRUD-system",
 
         "Team-developed web application built with Spring Boot for managing the Drink, Food, Pizza and Spirit resources. The application follows the MVC architecture and provides full CRUD functionality with Thymeleaf as the presentation layer and PostgreSQL (Neon) as the database. I containerized the application with Docker and was responsible for deployment on Render.":
             "Grupputvecklad webbapplikation byggd med Spring Boot för hantering av resurserna Drink, Food, Pizza och Spirit. Applikationen följer MVC-arkitektur och erbjuder full CRUD-funktionalitet med Thymeleaf som presentationslager och PostgreSQL (Neon) som databas. Jag Dockeriserade applikationen och ansvarade för driftsättning på Render.",
@@ -299,8 +299,8 @@ const translations = {
         "As an individual extension, I implemented a Jenkins-based build process with Maven Wrapper, Logback-based logging and integration tests with Spring Boot, MockMvc and H2 to automate the build, testing and quality assurance process.":
             "Som individuellt vidarearbete implementerade jag en Jenkins-baserad byggprocess med Maven Wrapper, Logback-baserad loggning samt integrationstester med Spring Boot, MockMvc och H2 för att automatisera bygg-, test- och kvalitetssäkringsprocessen.",
 
-        "ATM System – Spring Boot Application with Unit Testing and End-to-End Testing":
-            "ATM System – Spring Boot-applikation med Unit Testing och End-to-End-testning",
+        "ATM System with Unit and End-to-End Testing":
+            "ATM-system med enhets- och end-to-end-testning",
 
         "Individual project developed with Spring Boot using a layered architecture (Controller, Service and Component) to simulate basic ATM functions such as deposits, withdrawals and balance management. The application uses Thymeleaf for presentation and implements custom error handling through custom exceptions for different business rules.":
             "Individuellt projekt utvecklat med Spring Boot enligt lagerbaserad arkitektur (Controller, Service och Component) för simulering av grundläggande bankomatsfunktioner såsom insättning, uttag och saldohantering. Applikationen använder Thymeleaf för presentation och implementerar anpassad felhantering genom egna exceptions för olika affärsregler.",
@@ -308,8 +308,8 @@ const translations = {
         "I implemented business logic for transaction validation, balance management and withdrawal limits. The project was complemented with extensive testing using JUnit 5 for unit tests, Mockito for isolated testing of the service layer and Playwright for end-to-end testing of the web interface. The tests verify both normal user flows and error handling to ensure that the application works correctly throughout the stack.":
             "Jag implementerade affärslogik för validering av transaktioner, saldohantering och begränsningar för uttag. Projektet kompletterades med omfattande testning där JUnit 5 användes för enhetstester, Mockito för isolerad testning av service-lagret samt Playwright för end-to-end-testning av webbgränssnittet. Tester verifierar både normala användarflöden och felhantering för att säkerställa att applikationen fungerar korrekt genom hela stacken.",
 
-        "Group Project – Spring Boot MVC Application with Thymeleaf":
-            "Gruppprojekt – Spring Boot MVC-applikation med Thymeleaf",
+        "Spring MVC Group Project":
+            "Gruppprojekt med Spring MVC",
 
         "Team-developed web project built with Spring Boot and Thymeleaf according to the MVC architecture (Model–View–Controller). The application consists of several functional modules for managing and presenting users, people, appointments, ratings, tags, comments, tasks and queues through separate controllers, models and views.":
             "Grupputvecklat webbprojekt byggt med Spring Boot och Thymeleaf enligt MVC-arkitekturen (Model–View–Controller). Applikationen består av flera funktionella moduler för hantering och presentation av användare, personer, bokningar, betyg, taggar, kommentarer, uppgifter och köhantering genom separata controllers, modeller och vyer.",
@@ -317,8 +317,8 @@ const translations = {
         "I participated in developing backend logic and the web interface by implementing Spring MVC controllers, creating domain models and building dynamic Thymeleaf views. The project provided practical experience with routing, data transfer between controller and view, the use of model objects and structuring a Java-based web application according to established design principles.":
             "Jag deltog i utvecklingen av backend-logik och webbgränssnitt genom att implementera Spring MVC-controllers, skapa domänmodeller samt bygga dynamiska Thymeleaf-vyer. Projektet gav praktisk erfarenhet av routing, dataöverföring mellan controller och vy, användning av modellobjekt samt strukturering av en Java-baserad webbapplikation enligt etablerade designprinciper.",
 
-        "Chat Application with Java and Spring Boot":
-            "Chattapplikation med Java och Spring Boot",
+        "Spring Boot Chat Application":
+            "Chattapplikation med Spring Boot",
 
         "Developed a client-server chat application where multiple users can connect simultaneously, register accounts, log in and send messages in real time. Communication between client and server takes place via Java Sockets, and the server handles multiple clients in parallel using multithreading.":
             "Utvecklade en klient-serverbaserad chattapplikation där flera användare kan ansluta samtidigt, registrera konton, logga in och skicka meddelanden i realtid. Kommunikation mellan klient och server sker via Java Sockets och servern hanterar flera klienter parallellt med hjälp av multitrådning.",
@@ -371,8 +371,8 @@ const translations = {
         "Implemented file-based storage through serialization to save and load products between runs, as well as support for both console-based and dialog-based user interfaces through a common interface.":
             "Implementerade filbaserad lagring genom serialisering för att spara och läsa in produkter mellan körningar samt stöd för både konsolbaserat och dialogbaserat användargränssnitt via ett gemensamt interface.",
 
-        "Basic Java – Methods and Arrays":
-            "Grundläggande Java – Metoder och arrayer",
+        "Java Methods and Arrays":
+            "Metoder och arrayer i Java",
 
         "One of the first lab assignments in the program, focused on fundamental Java programming. The assignment involved working with methods, arrays, loops, parameters and return values to build an understanding of the language's fundamental constructs.":
             "En av de första laborationerna under utbildningen med fokus på grundläggande Java-programmering. Uppgiften omfattade arbete med metoder, arrayer, loopar, parametrar och returvärden för att bygga upp förståelse för språkets grundläggande konstruktioner.",
