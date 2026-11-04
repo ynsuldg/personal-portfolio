@@ -780,6 +780,11 @@ h3 {
     margin-top: var(--action-offset);
 }
 
+.project-launch-note {
+    align-self: center;
+    font-size: 0.9rem;
+}
+
 .project-resource-menus {
     position: relative;
     z-index: 20;

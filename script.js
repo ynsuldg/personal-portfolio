@@ -393,6 +393,9 @@ const translations = {
             "Implementerade funktioner för utskrift av arrayer, sökning efter största värde samt metoder med parametrar och returvärden. Projektet lade grunden för senare arbete med objektorienterad programmering.",
 
         "Open website": "Öppna webbplatsen",
+        "Available at launch": "Tillgänglig vid lansering",
+        "The application link will be activated when the project launches.":
+            "Länken till applikationen aktiveras i samband med lanseringen.",
         "View on GitHub": "Visa på GitHub",
         "View the extended version": "Visa den vidareutvecklade versionen",
 
@@ -514,6 +517,8 @@ document.querySelectorAll("[data-project-status]").forEach((tag) => {
  * Länkknappar för projektkorten. Lägg till data-live-url och/eller
  * data-repo-url på en .project-actions i HTML. Webbplatsknappen är
  * inaktiverad när länken saknas eller kortets status inte är "live".
+ * Privata produkter som inte har lanserats får data-launch, som ger en
+ * inaktiverad "Available at launch" i stället för webbplatsknappen.
  */
 function createProjectButton(label, variant, url) {
     const button = document.createElement(url ? "a" : "span");
@@ -541,12 +546,18 @@ document.querySelectorAll(".project-card").forEach((card) => {
     const actions = card.querySelector(".project-actions");
     const menus = card.querySelector(".project-resource-menus");
     const status = card.querySelector("[data-project-status]")?.dataset.projectStatus;
-    const {liveUrl, repoUrl} = actions?.dataset ?? {};
+    const {liveUrl, repoUrl, launch} = actions?.dataset ?? {};
     const isLive = liveUrl && (!status || status === "live");
     const showLiveButton = liveUrl !== undefined || (status && status !== "live");
     const buttons = [];
 
-    if (showLiveButton) {
+    if (launch !== undefined) {
+        const note = document.createElement("p");
+        note.className = "project-launch-note";
+        note.textContent = "The application link will be activated when the project launches.";
+
+        buttons.push(createProjectButton("Available at launch", "primary", null), note);
+    } else if (showLiveButton) {
         buttons.push(createProjectButton("Open website", "primary", isLive ? liveUrl : null));
     }
 
