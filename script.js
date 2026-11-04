@@ -246,6 +246,9 @@ const translations = {
         "This is a school project created for educational and demonstration purposes.":
             "Detta är ett skolprojekt för utbildnings- och demonstrationssyfte.",
 
+        "Accounts can be registered, but signing in requires a login link sent by email. The link cannot be delivered because Render's free tier blocks outgoing email.":
+            "Det går att registrera ett konto, men inloggningen kräver en länk som skickas via e-post. Länken kan inte levereras eftersom Renders gratisversion blockerar utgående e-post.",
+
         "Microservices Webshop":
             "Webshop med mikrotjänster",
 
