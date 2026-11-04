@@ -249,6 +249,12 @@ const translations = {
         "Accounts can be registered, but signing in requires a login link sent by email. The link cannot be delivered because Render's free tier blocks outgoing email.":
             "Det går att registrera ett konto, men inloggningen kräver en länk som skickas via e-post. Länken kan inte levereras eftersom Renders gratisversion blockerar utgående e-post.",
 
+        "The application has no CSS styling, as the focus was on the security functionality. To test two-factor authentication, select it when creating an account and scan the QR code with an authenticator app.":
+            "Applikationen saknar CSS-styling eftersom fokus låg på säkerhetsfunktionerna. För att testa tvåfaktorsautentisering väljer du det när du skapar ett konto och skannar QR-koden med en autentiseringsapp.",
+
+        "A flow for deleting accounts is now available, along with a demo password reset flow.":
+            "Det finns nu ett flöde för att radera konto samt ett demo-flöde för lösenordsåterställning.",
+
         "Microservices Webshop":
             "Webshop med mikrotjänster",
 
