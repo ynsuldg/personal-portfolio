@@ -386,8 +386,8 @@ const translations = {
         "Java Methods and Arrays":
             "Metoder och arrayer i Java",
 
-        "One of the first lab assignments in the program, focused on fundamental Java programming. The assignment involved working with methods, arrays, loops, parameters and return values to build an understanding of the language's fundamental constructs.":
-            "En av de första laborationerna under utbildningen med fokus på grundläggande Java-programmering. Uppgiften omfattade arbete med metoder, arrayer, loopar, parametrar och returvärden för att bygga upp förståelse för språkets grundläggande konstruktioner.",
+        "The first project in the program, focused on fundamental Java programming. The project involved working with methods, arrays, loops, parameters and return values to build an understanding of the language's fundamental constructs.":
+            "Det första projektet under utbildningen med fokus på grundläggande Java-programmering. Projektet omfattade arbete med metoder, arrayer, loopar, parametrar och returvärden för att bygga upp förståelse för språkets grundläggande konstruktioner.",
 
         "Implemented functions for printing arrays, finding the largest value and methods with parameters and return values. The project laid the foundation for later work with object-oriented programming.":
             "Implementerade funktioner för utskrift av arrayer, sökning efter största värde samt metoder med parametrar och returvärden. Projektet lade grunden för senare arbete med objektorienterad programmering.",
