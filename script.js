@@ -401,6 +401,7 @@ const translations = {
             "Länken till applikationen aktiveras i samband med lanseringen.",
         "View on GitHub": "Visa på GitHub",
         "View the extended version": "Visa den vidareutvecklade versionen",
+        "Extended version": "Vidareutvecklad version",
 
         "Work Experience": "Arbetslivserfarenhet",
         "Role:": "Tjänst:",

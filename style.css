@@ -788,6 +788,11 @@ h3 {
     font-size: 0.9rem;
 }
 
+/* Kortare knapptext på mobil, där den långa inte får plats. */
+.label-short {
+    display: none;
+}
+
 .project-resource-menus {
     position: relative;
     z-index: 20;
@@ -1270,5 +1275,19 @@ h3 {
     .project-resource-menus {
         display: grid;
         grid-template-columns: minmax(0, 1fr);
+    }
+
+    .project-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .label-long {
+        display: none;
+    }
+
+    .label-short {
+        display: inline;
     }
 }
