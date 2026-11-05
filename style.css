@@ -640,18 +640,18 @@ h3 {
     mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='5' fill='none' stroke='black' stroke-width='1.2'/%3E%3Cpath d='M6 1a5 5 0 0 0 0 10Z' fill='black'/%3E%3C/svg%3E");
 }
 
-.project-columns {
+.card-groups {
     display: grid;
     grid-template-columns: minmax(0, 1fr);
     align-items: start;
     gap: 2rem;
 }
 
-.project-column {
+.card-group {
     min-width: 0;
 }
 
-.project-column-title {
+.card-group-title {
     margin-bottom: var(--action-gap);
     color: var(--text);
 }
@@ -673,7 +673,7 @@ h3 {
                 0 0 22px color-mix(in srgb, var(--primary) 22%, transparent);
 }
 
-.project-columns .project-card {
+.card-groups .project-card {
     grid-template-columns: 1fr;
 }
 
@@ -1059,6 +1059,23 @@ h3 {
 
 .timeline-item p + p {
     margin-top: 0.7rem;
+}
+
+/* Grupperad erfarenhet får samma avstånd som projektkorten. */
+.card-group .timeline {
+    gap: 0;
+}
+
+.card-group .timeline-item {
+    margin-bottom: var(--action-gap);
+}
+
+/* Kommande erfarenhet: samma glöd som .project-card:hover, men alltid på. */
+.timeline-upcoming {
+    border-color: color-mix(in srgb, var(--primary) 72%, var(--border));
+    box-shadow: var(--shadow-md),
+                0 0 0 1px color-mix(in srgb, var(--primary) 24%, transparent),
+                0 0 22px color-mix(in srgb, var(--primary) 22%, transparent);
 }
 
 .faq-grid {
