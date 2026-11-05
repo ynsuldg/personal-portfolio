@@ -150,7 +150,9 @@ const translations = {
         "Built as an independently developed production-style service with secure account management, Google OAuth 2.0, two-factor authentication, subscription-ready Stripe integration, RabbitMQ-based notification processing, automated tests, CI/CD and an always-on Docker deployment on Render. The public Premium subscription is planned for a later launch.":
             "Utvecklad självständigt som en produktionsliknande tjänst med säker kontohantering, Google OAuth 2.0, tvåfaktorsautentisering, prenumerationsförberedd Stripe-integration, RabbitMQ-baserad notifikationshantering, automatiserade tester, CI/CD och en ständigt aktiv Docker-driftsättning på Render. Den publika Premium-prenumerationen planeras för en senare lansering.",
 
+        "Live": "Live",
         "Paused": "Pausad",
+        "Offline": "Offline",
         "Not deployed": "Ej driftsatt",
 
         "Group Work": "Grupparbete",
@@ -214,8 +216,8 @@ const translations = {
 
         "repository README": "README-fil",
 
-        "The README file is only available in Swedish.":
-            "README-filen är endast tillgänglig på svenska.",
+        ". The README file is only available in Swedish.":
+            ". README-filen är endast tillgänglig på svenska.",
 
         "Open the services above and wait until their status pages confirm that startup is complete before testing the application.":
             "Öppna tjänsterna ovan och invänta att statussidorna bekräftar att uppstarten är klar innan applikationen testas.",
@@ -541,6 +543,20 @@ function createProjectButton(label, variant, url) {
     return button;
 }
 
+// Inaktiverad menyknapp för kort med flera tjänster som inte är live.
+function createDisabledMenu(label) {
+    const menu = document.createElement("span");
+    menu.className = "project-resource-menu disabled";
+    menu.setAttribute("aria-disabled", "true");
+
+    const summary = document.createElement("span");
+    summary.className = "project-resource-summary";
+    summary.textContent = label;
+    menu.append(summary);
+
+    return menu;
+}
+
 /*
  * Kort som inte är live visar webbplatsknappen inaktiverad, även utan
  * data-live-url. Kort med flera repon får knappen före sina menyer.
@@ -561,6 +577,8 @@ document.querySelectorAll(".project-card").forEach((card) => {
         note.textContent = "The application link will be activated when the project launches.";
 
         buttons.push(createProjectButton("Available at launch", "primary", null), note);
+    } else if (!actions && menus && status !== "live") {
+        buttons.push(createDisabledMenu("Live services"));
     } else if (showLiveButton) {
         buttons.push(createProjectButton("Open website", "primary", isLive ? liveUrl : null));
     }
