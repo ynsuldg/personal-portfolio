@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 5 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 9 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -409,7 +409,10 @@ const translations = {
         "IT": "IT",
         "Security": "Säkerhet",
         
-        "Coming soon": "Kommer snart",
+        "Ongoing": "Pågående",
+        "Full Stack Developer Intern.": "Full Stack Developer-praktikant.",
+        "Further development and maintenance of an existing system, focusing on both frontend and backend.":
+            "Vidareutveckling och underhåll av ett befintligt system, med fokus på både frontend och backend.",
 
         "Role:": "Tjänst:",
         "Responsibilities:": "Uppgifter:",
