@@ -406,7 +406,6 @@ const translations = {
         "Extended version": "Vidareutvecklad version",
 
         "Work Experience": "Arbetslivserfarenhet",
-        "IT": "IT",
         "Security": "Säkerhet",
         
         "Ongoing": "Pågående",

@@ -1070,8 +1070,8 @@ h3 {
     margin-bottom: var(--action-gap);
 }
 
-/* Kommande erfarenhet: samma glöd som .project-card:hover, men alltid på. */
-.timeline-upcoming {
+/* Pågående utbildning eller erfarenhet: samma glöd som .project-card:hover, men alltid på. */
+.current-card {
     border-color: color-mix(in srgb, var(--primary) 72%, var(--border));
     box-shadow: var(--shadow-md),
                 0 0 0 1px color-mix(in srgb, var(--primary) 24%, transparent),
