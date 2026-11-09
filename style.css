@@ -1078,6 +1078,42 @@ h3 {
                 0 0 22px color-mix(in srgb, var(--primary) 22%, transparent);
 }
 
+/*
+ * Sektion med inaktuellt innehåll som behöver uppdateras. Samma röda glöd som
+ * felkorten i Smart Price Tracker, ritad runt sektionen utan att ändra layouten.
+ */
+.needs-update {
+    position: relative;
+}
+
+.needs-update::before {
+    content: "";
+    position: absolute;
+    inset: 1.25rem calc(var(--page-gutter) * -0.75) 2.75rem;
+    border: 1px solid color-mix(in srgb, var(--danger) 72%, var(--border));
+    border-radius: var(--radius-card);
+    box-shadow: var(--shadow-md),
+                0 0 0 1px color-mix(in srgb, var(--danger) 24%, transparent),
+                0 0 22px color-mix(in srgb, var(--danger) 22%, transparent);
+    pointer-events: none;
+}
+
+/* Röd etikett uppe till höger i ramen, samma ton som offline-statusen. */
+.update-badge {
+    position: absolute;
+    top: calc(1.25rem + 1rem);
+    right: calc(var(--page-gutter) * -0.75 + 1rem);
+    z-index: 1;
+    padding: 0.35rem 0.8rem;
+    border: 1px solid color-mix(in srgb, var(--danger) 64%, var(--border));
+    border-radius: var(--radius-pill);
+    background: color-mix(in srgb, var(--danger) 10%, var(--card));
+    color: var(--danger);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--danger) 14%, transparent);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
 .faq-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -410,6 +410,7 @@ const translations = {
         "Security": "Säkerhet",
         
         "Ongoing": "Pågående",
+        "Needs update": "Behöver uppdateras",
         "Full Stack Developer Intern.": "Full Stack Developer-praktikant.",
         "Further development and maintenance of an existing system, focusing on both frontend and backend.":
             "Vidareutveckling och underhåll av ett befintligt system, med fokus på både frontend och backend.",
