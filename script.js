@@ -83,18 +83,18 @@ const translations = {
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
 
-        "I am looking for an internship (LIA) starting November 9, 2026 (week 46), where I can apply my knowledge, contribute to development projects and continue growing as a developer.":
-            "Jag söker en LIA-plats med start den 9 november 2026 (vecka 46), där jag kan omsätta mina kunskaper i praktiken, bidra i utvecklingsprojekt och fortsätta växa som utvecklare.",
+        "I am studying to become a Java developer and am currently doing my internship (LIA) as a full stack developer at PostNord, where I apply my knowledge in real projects and continue to grow as a developer.":
+            "Jag studerar till Javautvecklare och gör just nu min LIA-praktik som full stack-utvecklare på PostNord, där jag omsätter mina kunskaper i verkliga projekt och fortsätter växa som utvecklare.",
 
         "View projects": "Se projekt",
         "Contact me": "Kontakta mig",
         "Profile": "Profil",
 
-        "I am 33 years old, based in Stockholm and studying to become a Java developer. I am looking for opportunities to further develop my practical skills in programming and software development.":
-            "Jag är 33 år, bosatt i Stockholm och studerar till Javautvecklare. Jag söker möjlighet att praktiskt utvecklas vidare inom programmering och systemutveckling.",
+        "I am 33 years old, based in Stockholm and studying to become a Java developer. I am currently doing my internship (LIA) at PostNord, where I further develop my practical skills in programming and software development.":
+            "Jag är 33 år, bosatt i Stockholm och studerar till Javautvecklare. Just nu gör jag min LIA-praktik på PostNord, där jag utvecklas vidare praktiskt inom programmering och systemutveckling.",
 
-        "I am curious, committed and eager to learn more by working on real projects and in team environments.":
-            "Jag är nyfiken, engagerad och vill lära mig mer genom att arbeta i verkliga projekt och teammiljöer.",
+        "I am curious, committed and eager to learn, and I enjoy working on real projects, both in teams and independently. In my free time, I also develop my own products.":
+            "Jag är nyfiken, engagerad och lärovillig, och jag trivs med att arbeta i verkliga projekt, både i team och självständigt. På fritiden utvecklar jag även mina egna produkter.",
 
         "2025 08 25 – 2027 06 04 (Ongoing)":
             "2025 08 25 – 2027 06 04 (Pågående)",
