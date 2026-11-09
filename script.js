@@ -444,10 +444,10 @@ const translations = {
 
         "Frequently asked questions": "Vanliga frågor",
 
+
         "When does your internship start?": "När börjar din LIA?",
         "My internship starts on November 9, 2026, in week 46.":
             "Min LIA börjar den 9 november 2026, vecka 46.",
-
         "How long is the internship period?": "Hur lång är praktikperioden?",
         "It runs continuously until week 22 of 2027, giving the company and me almost seven months of uninterrupted collaboration.":
             "Den pågår sammanhängande till vecka 22 år 2027, vilket ger företaget och mig nästan sju månaders samarbete utan avbrott.",

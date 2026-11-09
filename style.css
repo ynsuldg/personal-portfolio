@@ -1078,31 +1078,20 @@ h3 {
                 0 0 22px color-mix(in srgb, var(--primary) 22%, transparent);
 }
 
-/*
- * Sektion med inaktuellt innehåll som behöver uppdateras. Samma röda glöd som
- * felkorten i Smart Price Tracker, ritad runt sektionen utan att ändra layouten.
- */
-.needs-update {
+/* Kort med inaktuellt innehåll: samma röda glöd som felkorten i Smart Price Tracker. */
+.needs-update-card {
     position: relative;
-}
-
-.needs-update::before {
-    content: "";
-    position: absolute;
-    inset: 1.25rem calc(var(--page-gutter) * -0.75) 2.75rem;
-    border: 1px solid color-mix(in srgb, var(--danger) 72%, var(--border));
-    border-radius: var(--radius-card);
+    border-color: color-mix(in srgb, var(--danger) 72%, var(--border));
     box-shadow: var(--shadow-md),
                 0 0 0 1px color-mix(in srgb, var(--danger) 24%, transparent),
                 0 0 22px color-mix(in srgb, var(--danger) 22%, transparent);
-    pointer-events: none;
 }
 
-/* Röd etikett uppe till höger i ramen, samma ton som offline-statusen. */
+/* Röd etikett uppe till höger i kortet, samma ton som offline-statusen. */
 .update-badge {
     position: absolute;
-    top: calc(1.25rem + 1rem);
-    right: calc(var(--page-gutter) * -0.75 + 1rem);
+    top: 1rem;
+    right: 1rem;
     z-index: 1;
     padding: 0.35rem 0.8rem;
     border: 1px solid color-mix(in srgb, var(--danger) 64%, var(--border));
