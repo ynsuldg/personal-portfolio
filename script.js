@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 9 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 18 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -534,10 +534,34 @@ document.querySelectorAll("[data-project-status]").forEach((tag) => {
  * Privata produkter som inte har lanserats får data-launch, som ger en
  * inaktiverad "Available at launch" i stället för webbplatsknappen.
  */
+function createProjectButtonIcon(label) {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.classList.add("project-action-icon");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("viewBox", "0 0 24 24");
+
+    const pathData = label === "View on GitHub"
+        ? ["M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"]
+        : label === "Open website"
+            ? ["M16 16l-4-4-4 4", "M12 12v9", "M20.4 18.4A5 5 0 0 0 18 9h-1.3A8 8 0 1 0 3 16.3"]
+            : [];
+
+    pathData.forEach((data) => {
+        const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+        path.setAttribute("d", data);
+        svg.append(path);
+    });
+
+    return pathData.length ? svg : null;
+}
+
 function createProjectButton(label, variant, url) {
     const button = document.createElement(url ? "a" : "span");
+    const icon = createProjectButtonIcon(label);
+    const text = document.createElement("span");
     button.className = `btn ${variant}`;
-    button.textContent = label;
+    text.textContent = label;
+    button.append(...(icon ? [icon, text] : [text]));
 
     if (url) {
         button.href = url;

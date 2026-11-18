@@ -841,6 +841,7 @@ h3 {
     display: flex;
     min-height: 2.85rem;
     align-items: center;
+    gap: 0.55rem;
     padding: 0.78rem 3.5rem 0.78rem 1rem;
     border: 1px solid color-mix(in srgb, var(--muted) 36%, var(--border));
     border-radius: var(--radius-control);
@@ -858,6 +859,18 @@ h3 {
     list-style: none;
     transition: transform 0.16s ease, box-shadow 0.16s ease,
                 background 0.16s ease, border-color 0.16s ease, color 0.16s ease;
+}
+
+.project-resource-icon,
+.project-action-icon {
+    width: 1.1rem;
+    height: 1.1rem;
+    flex-shrink: 0;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
 /* Samma utseende som .btn.disabled. */
