@@ -219,6 +219,9 @@ const translations = {
         ". The README file is only available in Swedish.":
             ". README-filen är endast tillgänglig på svenska.",
 
+        "Warning: The payment button may occasionally fail to redirect to Stripe and show an error message instead. This usually happens on the first attempt after the application has started again. If this happens, try again.":
+            "Varning: Betalningsknappen kan ibland misslyckas med att gå vidare till Stripe och i stället visa ett felmeddelande. Detta händer vanligtvis vid det första försöket efter att applikationen har startats på nytt. Försök igen om detta händer.",
+
         "Open the services above and wait until their status pages confirm that startup is complete before testing the application.":
             "Öppna tjänsterna ovan och invänta att statussidorna bekräftar att uppstarten är klar innan applikationen testas.",
 

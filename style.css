@@ -964,6 +964,13 @@ h3 {
                 0 0 18px color-mix(in srgb, var(--primary) 16%, transparent);
 }
 
+.alert-danger {
+    border-color: color-mix(in srgb, var(--danger) 64%, var(--border));
+    background: color-mix(in srgb, var(--danger) 10%, var(--card));
+    color: var(--danger);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--danger) 14%, transparent);
+}
+
 .project-resource-alert {
     margin-bottom: 0;
 }
@@ -985,6 +992,10 @@ h3 {
 
 .project-resource-alert p + p {
     margin-top: 1rem;
+}
+
+.project-payment-warning {
+    margin-bottom: 0;
 }
 
 .project-meta,
