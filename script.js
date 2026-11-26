@@ -420,11 +420,11 @@ const translations = {
         "Role:": "Tjänst:",
         "Responsibilities:": "Uppgifter:",
 
-        "Static security duties during both day and night shifts at a shopping center.":
-            "Stationär tjänst dag och natt på ett köpcentrum.",
+        "Static security duties during daytime at a shopping center.":
+            "Stationär tjänst dagtid på ett köpcentrum.",
 
-        "Locking and unlocking premises, responding to fire alarms, staff assistance, reporting, handling unusual incidents and crime prevention.":
-            "Låsning, upplåsning, brandlarmsåtgärd, personalservice, rapportering, åtgärd av andra avvikande påträffanden samt brottsförebyggning.",
+        "Locking and unlocking premises, responding to fire alarms, staff assistance, reporting, handling unusual incidents, real-time CCTV monitoring and crime prevention.":
+            "Låsning, upplåsning, brandlarmsåtgärd, personalservice, rapportering, åtgärd av andra avvikande påträffanden, kameraövervakning i realtid samt brottsförebyggning.",
 
         "Static security duties during daytime at a larger site in Södertälje, primarily involving visitor reception, goods reception and vaccination reception during the peak period of Covid-19 vaccination.":
             "Stationär tjänst dagtid på ett större objekt i Södertälje, främst inom besöksmottagning, godsmottagning och vaccinationsmottagning under hög säsong för Covid-19 vaccination.",
