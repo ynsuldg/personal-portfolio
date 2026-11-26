@@ -78,7 +78,7 @@ const translations = {
         "Cover letter": "Personligt brev",
         "Contact": "Kontakt",
 
-        portfolioLastUpdated: "Senast uppdaterad: 18 november 2026",
+        portfolioLastUpdated: "Senast uppdaterad: 26 november 2026",
 
         "Java Developer Student": "Studerande till Javautvecklare",
         "Hi, my name is": "Hej, jag heter",
@@ -156,6 +156,8 @@ const translations = {
         "Not deployed": "Ej driftsatt",
 
         "Group Work": "Grupparbete",
+
+        "Contributors:": "Medverkande:",
 
         "Individual Work": "Individuellt arbete",
 
